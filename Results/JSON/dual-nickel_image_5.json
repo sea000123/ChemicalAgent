@@ -1,0 +1,336 @@
+{
+    "SMILES": {
+        "reactants": [
+            "[7*]N[7*]",
+            "*Br"
+        ],
+        "products": [
+            "*OC(=O)N([2*])[7*]"
+        ]
+    },
+    "Optimization Runs": {
+        "Entry 3": {
+            "Entry": 3,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "TMG",
+                    "2.0 equiv"
+                ],
+                [
+                    "Ni(dtbbpy)Br2",
+                    "0.05 mmol"
+                ],
+                [
+                    "4DPAPN-tBu 7c",
+                    "0.1 %"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "4 mL, 0.25 M"
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "Flushed with CO2",
+            "Yield": "I: 78 %, Br: 68 %, OTf: 0%",
+            "Footnote": "a,b"
+        },
+        "Entry 10": {
+            "Entry": 10,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "TMG",
+                    "2.0 equiv"
+                ],
+                [
+                    "Ni(dtbbpy)Br2",
+                    "0.05 mmol"
+                ],
+                [
+                    "4DPAPN-tBu 7c",
+                    "0.1 %"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "4 mL, 0.25 M"
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "Flushed with CO2",
+            "Yield": "I: 81 %, Br: 42 %",
+            "Footnote": ""
+        },
+        "Entry 11": {
+            "Entry": 11,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "TMG",
+                    "2.0 equiv"
+                ],
+                [
+                    "Ni(dtbbpy)Br2",
+                    "0.05 mmol"
+                ],
+                [
+                    "4DPAPN-tBu 7c",
+                    "0.1 %"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "4 mL, 0.25 M"
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "Flushed with CO2",
+            "Yield": "I: 55 %, Br: 77 %",
+            "Footnote": ""
+        },
+        "Entry 12": {
+            "Entry": 12,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "TMG",
+                    "2.0 equiv"
+                ],
+                [
+                    "Ni(dtbbpy)Br2",
+                    "0.05 mmol"
+                ],
+                [
+                    "4DPAPN-tBu 7c",
+                    "0.1 %"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "4 mL, 0.25 M"
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "Flushed with CO2",
+            "Yield": "I: 85 %, Br: 74 %",
+            "Footnote": ""
+        },
+        "Entry 13": {
+            "Entry": 13,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "TMG",
+                    "2.0 equiv"
+                ],
+                [
+                    "Ni(dtbbpy)Br2",
+                    "0.05 mmol"
+                ],
+                [
+                    "4DPAPN-tBu 7c",
+                    "0.1 %"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "4 mL, 0.25 M"
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "Flushed with CO2",
+            "Yield": "I: 47 %, Br: 29 %",
+            "Footnote": ""
+        },
+        "Entry 14": {
+            "Entry": 14,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "TMG",
+                    "2.0 equiv"
+                ],
+                [
+                    "Ni(dtbbpy)Br2",
+                    "0.05 mmol"
+                ],
+                [
+                    "4DPAPN-tBu 7c",
+                    "0.1 %"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "4 mL, 0.25 M"
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "Flushed with CO2",
+            "Yield": "I: 36 %, Br: 3 %",
+            "Footnote": "a"
+        },
+        "Entry 15": {
+            "Entry": 15,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "TMG",
+                    "2.0 equiv"
+                ],
+                [
+                    "Ni(dtbbpy)Br2",
+                    "0.05 mmol"
+                ],
+                [
+                    "4DPAPN-tBu 7c",
+                    "0.1 %"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "4 mL, 0.25 M"
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "Flushed with CO2",
+            "Yield": "I: 72 %, Br: 3 %",
+            "Footnote": "a"
+        },
+        "Entry 16": {
+            "Entry": 16,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "TMG",
+                    "2.0 equiv"
+                ],
+                [
+                    "Ni(dtbbpy)Br2",
+                    "0.05 mmol"
+                ],
+                [
+                    "4DPAPN-tBu 7c",
+                    "0.1 %"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "4 mL, 0.25 M"
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "Flushed with CO2",
+            "Yield": "I: 77 %, Br: 32 %",
+            "Footnote": "a"
+        },
+        "Entry 17": {
+            "Entry": 17,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "TMG",
+                    "2.0 equiv"
+                ],
+                [
+                    "Ni(dtbbpy)Br2",
+                    "0.05 mmol"
+                ],
+                [
+                    "4DPAPN-tBu 7c",
+                    "0.1 %"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "4 mL, 0.25 M"
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "Flushed with CO2",
+            "Yield": "I: 62 %, Br: 26 %",
+            "Footnote": "a"
+        },
+        "Entry 18": {
+            "Entry": 18,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "TMG",
+                    "2.0 equiv"
+                ],
+                [
+                    "Ni(dtbbpy)Br2",
+                    "0.05 mmol"
+                ],
+                [
+                    "4DPAPN-tBu 7c",
+                    "0.1 %"
+                ],
+                [
+                    "Piperazine",
+                    "1.0 mmol"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "4 mL, 0.05 M"
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "Flushed with CO2",
+            "Yield": "I: 27.2 %, Br: 0 %",
+            "Footnote": "c,a"
+        },
+        "Entry 19": {
+            "Entry": 19,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "TMG",
+                    "2.0 equiv"
+                ],
+                [
+                    "Ni(dtbbpy)Br2",
+                    "0.05 mmol"
+                ],
+                [
+                    "4DPAPN-tBu 7c",
+                    "0.1 %"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "4 mL, 0.05 M"
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "Flushed with CO2",
+            "Yield": "I: 37 %, Br: 39 %",
+            "Footnote": "d,a"
+        }
+    }
+}

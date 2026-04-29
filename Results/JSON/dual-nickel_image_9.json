@@ -1,0 +1,303 @@
+{
+    "SMILES": {
+        "reactants": [
+            "FC(F)(F)c1ccc(I)cc1",
+            "C1COCCN1"
+        ],
+        "products": [
+            "FC(F)F.O=C(Oc1ccc(C(F)(F)F)cc1)N1CCOCC1"
+        ]
+    },
+    "Optimization Runs": {
+        "Run 1": {
+            "Entry": 1,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "Ni(dtbbpy)(o-tolyl)Br",
+                    "5 mol%"
+                ],
+                [
+                    "TMG",
+                    "2.0 equiv."
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "0.25 M"
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "N.R.",
+            "Yield": "3 (12%)",
+            "Footnote": "a"
+        },
+        "Run 2": {
+            "Entry": 2,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "Ni(dtbbpy)(o-tolyl)Br",
+                    "5 mol%"
+                ],
+                [
+                    "TMG",
+                    "2.0 equiv."
+                ],
+                [
+                    "4DPAPN-tBu 7c",
+                    null
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "0.25 M"
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "N.R.",
+            "Yield": "3 (78%)",
+            "Footnote": "a"
+        },
+        "Run 3": {
+            "Entry": 3,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "42",
+                    "1 equiv"
+                ],
+                [
+                    "43",
+                    "3 equiv"
+                ],
+                [
+                    "FeCp2BF4",
+                    null
+                ]
+            ],
+            "Solvents": [
+                [
+                    "ACN",
+                    "0.05 M"
+                ]
+            ],
+            "Duration": "3 h",
+            "Air/Inert": "N.R.",
+            "Yield": "44 (31%)",
+            "Footnote": "b"
+        },
+        "Run 4": {
+            "Entry": 4,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "Ni(dtbbpy)Br2",
+                    "5 mol%"
+                ],
+                [
+                    "TMG",
+                    "2.0 equiv."
+                ],
+                [
+                    "Zn",
+                    "1.0 equiv."
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "0.25 M"
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "N.R.",
+            "Yield": "3 (11%)",
+            "Footnote": "a"
+        },
+        "Run 5": {
+            "Entry": 5,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "Ni(dtbbpy)Br2",
+                    "5 mol%"
+                ],
+                [
+                    "TMG",
+                    "2.0 equiv."
+                ],
+                [
+                    "Zn",
+                    "1.0 equiv."
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "0.25 M"
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "N.R.",
+            "Yield": "3 (32%)",
+            "Footnote": "a"
+        },
+        "Run 6": {
+            "Entry": 6,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "Ni(dtbbpy)Br2",
+                    "5 mol%"
+                ],
+                [
+                    "TMG",
+                    "2.0 equiv."
+                ],
+                [
+                    "Zn",
+                    "0.5 equiv."
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "0.25 M"
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "N.R.",
+            "Yield": "3 (1%)",
+            "Footnote": "a"
+        },
+        "Run 7": {
+            "Entry": 7,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "Ni(dtbbpy)Br2",
+                    "5 mol%"
+                ],
+                [
+                    "TMG",
+                    "2.0 equiv."
+                ],
+                [
+                    "Zn",
+                    "0.5 equiv."
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "0.25 M"
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "N.R.",
+            "Yield": "3 (38%)",
+            "Footnote": "a"
+        },
+        "Run 8": {
+            "Entry": 8,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "Ni(COD)2",
+                    "5 mol%"
+                ],
+                [
+                    "dtbbpy",
+                    "5 mol%"
+                ],
+                [
+                    "TMG",
+                    "2.0 equiv."
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "0.25 M"
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "N.R.",
+            "Yield": "3 (10%)",
+            "Footnote": "a"
+        },
+        "Run 9": {
+            "Entry": 9,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "Ni(COD)2",
+                    "5 mol%"
+                ],
+                [
+                    "dtbbpy",
+                    "5 mol%"
+                ],
+                [
+                    "TMG",
+                    "2.0 equiv."
+                ],
+                [
+                    "4DPAPN-tBu 7c",
+                    null
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "0.25 M"
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "N.R.",
+            "Yield": "3 (27%)",
+            "Footnote": "a"
+        },
+        "Run 10": {
+            "Entry": 10,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "Ni(COD)2",
+                    "5 mol."
+                ],
+                [
+                    "dtbbpy",
+                    "5 mol%"
+                ],
+                [
+                    "TMG",
+                    "2.0 equiv."
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "0.25 M"
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "N.R.",
+            "Yield": "3 (1%)",
+            "Footnote": "a"
+        }
+    }
+}

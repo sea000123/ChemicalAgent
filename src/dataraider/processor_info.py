@@ -21,9 +21,10 @@ class DataRaiderInfo():
     
     def __init__(self,  
                  api_key:str,
-                 vlm_model = "gpt-4o-2024-08-06",
+                 vlm_model = "GPT-4.1-mini",
                  device='cpu', 
-                 ckpt_path:str=None):
+                 ckpt_path:str=None,
+                 base_url: str = None):
         """Constructor method
 
         :param api_key: OpenAI API key
@@ -37,4 +38,5 @@ class DataRaiderInfo():
         """
         self.api_key = api_key
         self.vlm_model = vlm_model
+        self.base_url = base_url
         self.model = RxnScribe(ckpt_path, device=torch.device(device)) # initialize RxnScribe to get SMILES 

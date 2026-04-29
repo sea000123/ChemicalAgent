@@ -1,0 +1,104 @@
+[
+  {
+    "source": {
+      "label": "Study",
+      "name": "dual-nickel_image_8"
+    },
+    "target": {
+      "label": "Reaction",
+      "uuid": "dual-nickel_image_8_Entry 3"
+    },
+    "label": "HasReaction",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "uuid": "dual-nickel_image_8_Entry 3"
+    },
+    "target": {
+      "label": "Compound",
+      "name": "4DPAPN-tbu"
+    },
+    "label": "HasCatalyst",
+    "properties": {
+      "value": 0.2,
+      "unit": "umol"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "uuid": "dual-nickel_image_8_Entry 3"
+    },
+    "target": {
+      "label": "Compound",
+      "name": "Ni(dtbbpy)Br2"
+    },
+    "label": "HasCatalyst",
+    "properties": {
+      "value": 0.01,
+      "unit": "mmol"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "uuid": "dual-nickel_image_8_Entry 3"
+    },
+    "target": {
+      "label": "Compound",
+      "name": "TMG"
+    },
+    "label": "HasAdditive",
+    "properties": {
+      "value": 0.4,
+      "unit": "mmol"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "uuid": "dual-nickel_image_8_Entry 3"
+    },
+    "target": {
+      "label": "Compound",
+      "name": "morpholine"
+    },
+    "label": "HasAdditive",
+    "properties": {
+      "value": 0.4,
+      "unit": "mmol"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "uuid": "dual-nickel_image_8_Entry 3"
+    },
+    "target": {
+      "label": "Compound",
+      "name": "PC"
+    },
+    "label": "HasAdditive",
+    "properties": {
+      "value": 1,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "uuid": "dual-nickel_image_8_Entry 3"
+    },
+    "target": {
+      "label": "Compound",
+      "name": "DMF"
+    },
+    "label": "HasSolvent",
+    "properties": {
+      "value": 8,
+      "unit": "mL"
+    }
+  }
+]

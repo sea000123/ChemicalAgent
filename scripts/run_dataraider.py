@@ -71,11 +71,23 @@ def main():
     new_keys = config.get('new_keys', None)
     # api_key = config.get('api_key', None)
     api_key = os.environ.get("OPENAI_API_KEY")
+    base_url = os.environ.get(
+        "OPENAI_BASE_URL",
+        "https://genaiapi.shanghaitech.edu.cn/api/v1/start"
+    )
+    vlm_model = os.environ.get("OPENAI_MODEL", "GPT-4.1-mini")
+
     if not api_key:
         print("API key not found. Please set the OPENAI_API_KEY environment variable.")
         return
 
-    info = DataRaiderInfo(api_key=api_key, device="cpu", ckpt_path=ckpt_path)
+    info = DataRaiderInfo(
+        api_key=api_key,
+        vlm_model=vlm_model,
+        base_url=base_url,
+        device="cpu",
+        ckpt_path=ckpt_path
+    )
     
     # Construct the initial reaction data extraction prompt
     print('\n############################ Starting up DataRaider ############################ ')

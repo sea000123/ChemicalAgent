@@ -31,7 +31,7 @@ def connect(
     return DriverRemoteConnection(
         f'{address}:{port}/gremlin'
         , graph_name
-        , message_serializer=serializer.GraphSONSerializersV3d0())
+        , message_serializer=serializer.GraphBinarySerializersV1())
 
 
 def get_traversal(
@@ -49,28 +49,19 @@ def get_traversal(
 
 
 def get_vertex(
-    vertex: VertexBase
-    , graph: GraphTraversalSource
-) -> Optional[Vertex]:
+    vertex: VertexBase,
+    graph: GraphTraversalSource
+) -> Optional[Any]:
     """
-    Retrieve an existing vertex from the graph based on its label and properties.
-
-    :param vertex: The vertex object containing the label and properties to search for.
-    :type vertex: VertexBase
-    :param graph: The graph traversal source used to execute the query.
-    :type graph: GraphTraversalSource
-    :return: The matching vertex if found, otherwise ``None``.
-    :rtype: Vertex | None
+    Return the id of an existing vertex, or None.
     """
     vertex_existing = graph.V().hasLabel(vertex.label)
     for key, value in vertex.properties.items():
         vertex_existing = vertex_existing.has(key, value)
 
-    try: 
-        v = vertex_existing.next()
-        if isinstance(v, Vertex): 
-            return v 
-    except StopIteration: 
+    try:
+        return vertex_existing.id_().next()
+    except StopIteration:
         return None
 
 def get_vertices(
@@ -145,103 +136,76 @@ def get_edges(
 
 
 def add_connection(
-    connection: Connection
-    , graph: GraphTraversalSource
-) -> Edge:
+    connection: Connection,
+    graph: GraphTraversalSource
+) -> None:
     """
-    Add a connection (edge) between two vertices in the graph.
-
-    :param connection: The connection object containing source, target, and edge properties.
-    :type connection: Connection
-    :param graph: The graph traversal source used to execute the query.
-    :type graph: GraphTraversalSource
-    :return: The created edge in the graph.
-    :rtype: Edge
-    :raises ValueError: If the edge could not be created in the database.
+    Add source vertex, target vertex, and edge.
+    Do not return the edge or edge id, because JanusGraph edge ids are
+    RelationIdentifier objects that GraphBinary cannot serialize.
     """
-    source_vertex = add_vertex(connection.source, graph)
-    target_vertex = add_vertex(connection.target, graph)
+    source_id = add_vertex(connection.source, graph)
+    target_id = add_vertex(connection.target, graph)
 
     edge_traversal = (
-        graph.V(source_vertex.id)
-        .as_("source")
-        .V(target_vertex.id)
-        .as_("target")
+        graph.V(source_id)
         .addE(connection.edge.label)
-        .from_("source")
+        .to(__.V(target_id))
     )
-    
+
     for key, value in connection.edge.properties.items():
-        edge_traversal = edge_traversal.property(key, value)
+        if value is not None:
+            edge_traversal = edge_traversal.property(key, value)
 
-    edge = edge_traversal.next()
+    edge_traversal.iterate()
 
-    if type(edge) != Edge:
-        raise ValueError("""
-            Unable to create the edge in the database.
-        """)
-    return edge
 
 
 def add_vertex(
-    vertex: VertexBase
-    , graph: GraphTraversalSource
-    , force: bool = False
-) -> Vertex:
+    vertex: VertexBase,
+    graph: GraphTraversalSource,
+    force: bool = False
+) -> Any:
     """
-    Add a vertex to the graph, optionally avoiding duplication.
-
-    :param vertex: The vertex object containing the label and properties.
-    :type vertex: VertexBase
-    :param graph: The graph traversal source used to execute the query.
-    :type graph: GraphTraversalSource
-    :param force: If ``True``, always creates a new vertex. If ``False``, checks for an existing vertex first.
-    :type force: bool, optional
-    :return: The created or retrieved vertex.
-    :rtype: Vertex
-    :raises ValueError: If the vertex could not be retrieved or created.
+    Add a vertex if it does not exist, and return its id.
     """
     if not force:
-        if ev := get_vertex(vertex, graph):
-            return ev
+        existing_id = get_vertex(vertex, graph)
+        if existing_id is not None:
+            return existing_id
 
     new_vertex = graph.addV(vertex.label)
     for key, value in vertex.properties.items():
-        new_vertex = new_vertex.property(key, value)
+        if value is not None:
+            new_vertex = new_vertex.property(key, value)
 
-    if type(v := new_vertex.next()) != Vertex:
-        # Unrecheable
-        raise ValueError("""
-            Unable to get matching vertex neither create it in the database.
-        """)
-    return new_vertex
+    return new_vertex.id_().next()
 
 
 def add_edge(
-    edge: EdgeBase
-    , graph: GraphTraversalSource
-    , force: bool = False
-) -> Edge:
+    edge: EdgeBase,
+    graph: GraphTraversalSource,
+    force: bool = False
+) -> None:
     """
-    Add an edge between two vertices in the graph.
+    Add an edge between existing source and target vertices by name.
+    Do not return edge id.
+    """
+    source_id = graph.V().has("name", edge.source).id_().next()
+    target_id = graph.V().has("name", edge.target).id_().next()
 
-    :param edge: The edge object containing the label, source, target, and properties.
-    :type edge: EdgeBase
-    :param graph: The graph traversal source used to execute the query.
-    :type graph: GraphTraversalSource
-    :param force: If ``True``, always creates a new edge. If ``False``, behavior is undefined
-                  (consider implementing a check for existing edges).
-    :type force: bool, optional
-    :return: The created edge.
-    :rtype: Edge
-n    :raises StopIteration: If the source or target vertex does not exist in the graph.
-    """
-    source = graph.V().has('name', edge.source).next()
-    target = graph.V().has('name', edge.target).next()
-    edge_traversal = graph.V(source.id).addE(edge.label).to(graph.V(target.id))
+    edge_traversal = (
+        graph.V(source_id)
+        .addE(edge.label)
+        .to(__.V(target_id))
+    )
+
     for key, value in edge.properties.items():
-        edge_traversal = edge_traversal.property(key, value)
-    return edge_traversal.next()
+        if value is not None:
+            edge_traversal = edge_traversal.property(key, value)
+
+    edge_traversal.iterate()
+
 
 
 def save_graph(

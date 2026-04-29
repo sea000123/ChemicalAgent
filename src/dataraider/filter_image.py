@@ -86,8 +86,17 @@ def filter_images(info:DataRaiderInfo,
             }
             # Send API request
             try:
-                response = requests.post("https://api.openai.com/v1/chat/completions", headers=headers, json=payload)
+                # response = requests.post("https://api.openai.com/v1/chat/completions", headers=headers, json=payload)
+                url = getattr(info, "base_url", None) or os.environ.get(
+                    "OPENAI_BASE_URL",
+                    "https://genaiapi.shanghaitech.edu.cn/api/v1/start"
+                )
+                response = requests.post(url, headers=headers, json=payload,timeout=60)
+
                 response.raise_for_status()  # Raise error if the request failed
+                data=response.json()
+                if "error" in data:
+                    raise RuntimeError(data["error"].get("message", str(data["error"])))
                 response_data = response.json()['choices'][0]['message']['content']
 
                 try: 
@@ -185,8 +194,17 @@ def check_segmentation(info:DataRaiderInfo,
             }
             # Send API request
             try:
-                response = requests.post("https://api.openai.com/v1/chat/completions", headers=headers, json=payload)
+                #response = requests.post("https://api.openai.com/v1/chat/completions", headers=headers, json=payload)
+                url = getattr(info, "base_url", None) or os.environ.get(
+                    "OPENAI_BASE_URL",
+                    "https://genaiapi.shanghaitech.edu.cn/api/v1/start",
+                )
+                response = requests.post(url, headers=headers, json=payload,timeout=60)
+
                 response.raise_for_status()  # Raise error if the request failed
+                data=response.json()
+                if "error" in data:
+                    raise RuntimeError(data["error"].get("message", str(data["error"])))
                 response_data = response.json()['choices'][0]['message']['content']
 
                 try: 

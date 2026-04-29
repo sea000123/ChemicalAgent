@@ -1,0 +1,452 @@
+{
+    "SMILES": {
+        "reactants": "N.R",
+        "products": "N.R"
+    },
+    "Optimization Runs": {
+        "7a": {
+            "Entry": "7a",
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "4-iodobenzotrifluoride",
+                    "0.4 mmol"
+                ],
+                [
+                    "TMG",
+                    "0.8 mmol"
+                ],
+                [
+                    "morpholine",
+                    "0.8 mmol"
+                ],
+                [
+                    "NiBr2dtbbpy",
+                    "0.02 mmol"
+                ],
+                [
+                    "photocatalyst",
+                    "0.004 mmol"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "0.1 M"
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "Flushed with CO2",
+            "Yield": "78%",
+            "Footnote": "a"
+        },
+        "8a": {
+            "Entry": "8a",
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "4-iodobenzotrifluoride",
+                    "0.4 mmol"
+                ],
+                [
+                    "TMG",
+                    "0.8 mmol"
+                ],
+                [
+                    "morpholine",
+                    "0.8 mmol"
+                ],
+                [
+                    "NiBr2dtbbpy",
+                    "0.02 mmol"
+                ],
+                [
+                    "photocatalyst",
+                    "0.004 mmol"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "0.1 M"
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "Flushed with CO2",
+            "Yield": "72%",
+            "Footnote": "a"
+        },
+        "9a": {
+            "Entry": "9a",
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "4-iodobenzotrifluoride",
+                    "0.4 mmol"
+                ],
+                [
+                    "TMG",
+                    "0.8 mmol"
+                ],
+                [
+                    "morpholine",
+                    "0.8 mmol"
+                ],
+                [
+                    "NiBr2dtbbpy",
+                    "0.02 mmol"
+                ],
+                [
+                    "photocatalyst",
+                    "0.004 mmol"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "0.1 M"
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "Flushed with CO2",
+            "Yield": "59%",
+            "Footnote": "a"
+        },
+        "7b": {
+            "Entry": "7b",
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "4-iodobenzotrifluoride",
+                    "0.4 mmol"
+                ],
+                [
+                    "TMG",
+                    "0.8 mmol"
+                ],
+                [
+                    "morpholine",
+                    "0.8 mmol"
+                ],
+                [
+                    "NiBr2dtbbpy",
+                    "0.02 mmol"
+                ],
+                [
+                    "photocatalyst",
+                    "0.004 mmol"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "0.1 M"
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "Flushed with CO2",
+            "Yield": "0%",
+            "Footnote": "a"
+        },
+        "8b": {
+            "Entry": "8b",
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "4-iodobenzotrifluoride",
+                    "0.4 mmol"
+                ],
+                [
+                    "TMG",
+                    "0.8 mmol"
+                ],
+                [
+                    "morpholine",
+                    "0.8 mmol"
+                ],
+                [
+                    "NiBr2dtbbpy",
+                    "0.02 mmol"
+                ],
+                [
+                    "photocatalyst",
+                    "0.004 mmol"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "0.1 M"
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "Flushed with CO2",
+            "Yield": "16%",
+            "Footnote": "a"
+        },
+        "9b": {
+            "Entry": "9b",
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "4-iodobenzotrifluoride",
+                    "0.4 mmol"
+                ],
+                [
+                    "TMG",
+                    "0.8 mmol"
+                ],
+                [
+                    "morpholine",
+                    "0.8 mmol"
+                ],
+                [
+                    "NiBr2dtbbpy",
+                    "0.02 mmol"
+                ],
+                [
+                    "photocatalyst",
+                    "0.004 mmol"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "0.1 M"
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "Flushed with CO2",
+            "Yield": "8%",
+            "Footnote": "a"
+        },
+        "7c": {
+            "Entry": "7c",
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "4-iodobenzotrifluoride",
+                    "0.4 mmol"
+                ],
+                [
+                    "TMG",
+                    "0.8 mmol"
+                ],
+                [
+                    "morpholine",
+                    "0.8 mmol"
+                ],
+                [
+                    "NiBr2dtbbpy",
+                    "0.02 mmol"
+                ],
+                [
+                    "photocatalyst",
+                    "0.004 mmol"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "acetonitrile",
+                    "0.1 M"
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "Flushed with CO2",
+            "Yield": "87%",
+            "Footnote": "a,c"
+        },
+        "8c": {
+            "Entry": "8c",
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "4-iodobenzotrifluoride",
+                    "0.4 mmol"
+                ],
+                [
+                    "TMG",
+                    "0.8 mmol"
+                ],
+                [
+                    "morpholine",
+                    "0.8 mmol"
+                ],
+                [
+                    "NiBr2dtbbpy",
+                    "0.02 mmol"
+                ],
+                [
+                    "photocatalyst",
+                    "0.004 mmol"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "acetonitrile",
+                    "0.1 M"
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "Flushed with CO2",
+            "Yield": "79%",
+            "Footnote": "a,c"
+        },
+        "9c": {
+            "Entry": "9c",
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "4-iodobenzotrifluoride",
+                    "0.4 mmol"
+                ],
+                [
+                    "TMG",
+                    "0.8 mmol"
+                ],
+                [
+                    "morpholine",
+                    "0.8 mmol"
+                ],
+                [
+                    "NiBr2dtbbpy",
+                    "0.02 mmol"
+                ],
+                [
+                    "photocatalyst",
+                    "0.004 mmol"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "acetonitrile",
+                    "0.1 M"
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "Flushed with CO2",
+            "Yield": "50%",
+            "Footnote": "a,c"
+        },
+        "7d": {
+            "Entry": "7d",
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "4-iodobenzotrifluoride",
+                    "0.4 mmol"
+                ],
+                [
+                    "TMG",
+                    "0.8 mmol"
+                ],
+                [
+                    "morpholine",
+                    "0.8 mmol"
+                ],
+                [
+                    "NiBr2dtbbpy",
+                    "0.02 mmol"
+                ],
+                [
+                    "photocatalyst",
+                    "0.004 mmol"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "0.1 M"
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "Flushed with CO2",
+            "Yield": "41%",
+            "Footnote": "a"
+        },
+        "8d": {
+            "Entry": "8d",
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "4-iodobenzotrifluoride",
+                    "0.4 mmol"
+                ],
+                [
+                    "TMG",
+                    "0.8 mmol"
+                ],
+                [
+                    "morpholine",
+                    "0.8 mmol"
+                ],
+                [
+                    "NiBr2dtbbpy",
+                    "0.02 mmol"
+                ],
+                [
+                    "photocatalyst",
+                    "0.004 mmol"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "0.1 M"
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "Flushed with CO2",
+            "Yield": "72%",
+            "Footnote": "a"
+        },
+        "9d": {
+            "Entry": "9d",
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "4-iodobenzotrifluoride",
+                    "0.4 mmol"
+                ],
+                [
+                    "TMG",
+                    "0.8 mmol"
+                ],
+                [
+                    "morpholine",
+                    "0.8 mmol"
+                ],
+                [
+                    "NiBr2dtbbpy",
+                    "0.02 mmol"
+                ],
+                [
+                    "photocatalyst",
+                    "0.004 mmol"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "0.1 M"
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "Flushed with CO2",
+            "Yield": "19%",
+            "Footnote": "a"
+        }
+    }
+}

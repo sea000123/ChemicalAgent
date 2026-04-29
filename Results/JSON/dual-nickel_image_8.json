@@ -1,0 +1,189 @@
+{
+    "SMILES": {
+        "reactants": "N.R",
+        "products": "N.R"
+    },
+    "Optimization Runs": {
+        "Entry 1": {
+            "Entry": 1,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "4DPAPN-tbu",
+                    "0.2 umol"
+                ],
+                [
+                    "Ni(dtbbpy)Br2",
+                    "0.01 mmol"
+                ],
+                [
+                    "TMG",
+                    "0.4 mmol"
+                ],
+                [
+                    "morpholine",
+                    "0.4 mmol"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "8 mL"
+                ]
+            ],
+            "Duration": "N.R.",
+            "Air/Inert": "N.R.",
+            "Yield": "N.R.",
+            "Footnote": ""
+        },
+        "Entry 2": {
+            "Entry": 2,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "4DPAPN-tbu",
+                    "0.2 umol"
+                ],
+                [
+                    "Ni(dtbbpy)Br2",
+                    "0.01 mmol"
+                ],
+                [
+                    "TMG",
+                    "0.4 mmol"
+                ],
+                [
+                    "morpholine",
+                    "0.4 mmol"
+                ],
+                [
+                    "PC",
+                    "0.5 %"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "8 mL"
+                ]
+            ],
+            "Duration": "N.R.",
+            "Air/Inert": "N.R.",
+            "Yield": "N.R.",
+            "Footnote": ""
+        },
+        "Entry 3": {
+            "Entry": 3,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "4DPAPN-tbu",
+                    "0.2 umol"
+                ],
+                [
+                    "Ni(dtbbpy)Br2",
+                    "0.01 mmol"
+                ],
+                [
+                    "TMG",
+                    "0.4 mmol"
+                ],
+                [
+                    "morpholine",
+                    "0.4 mmol"
+                ],
+                [
+                    "PC",
+                    "1 %"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "8 mL"
+                ]
+            ],
+            "Duration": "N.R.",
+            "Air/Inert": "N.R.",
+            "Yield": "N.R.",
+            "Footnote": ""
+        },
+        "Entry 4": {
+            "Entry": 4,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "4DPAPN-tbu",
+                    "0.2 umol"
+                ],
+                [
+                    "Ni(dtbbpy)Br2",
+                    "0.01 mmol"
+                ],
+                [
+                    "TMG",
+                    "0.4 mmol"
+                ],
+                [
+                    "morpholine",
+                    "0.2 mmol"
+                ],
+                [
+                    "PC",
+                    "1 %"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "8 mL"
+                ]
+            ],
+            "Duration": "N.R.",
+            "Air/Inert": "N.R.",
+            "Yield": "N.R.",
+            "Footnote": ""
+        },
+        "Entry 5": {
+            "Entry": 5,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "4DPAPN-tbu",
+                    "0.2 umol"
+                ],
+                [
+                    "Ni(dtbbpy)Br2",
+                    "0.01 mmol"
+                ],
+                [
+                    "TMG",
+                    "0.4 mmol"
+                ],
+                [
+                    "morpholine",
+                    "0.4 mmol"
+                ],
+                [
+                    "PC",
+                    "1 %"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "8 mL"
+                ]
+            ],
+            "Duration": "120-360 min",
+            "Air/Inert": "N.R.",
+            "Yield": "N.R.",
+            "Footnote": ""
+        }
+    }
+}

@@ -15,8 +15,15 @@ from .builder import (
     build_guidelines,
 )
 
+# client = OpenAI(
+#     api_key=os.environ.get("OPENAI_API_KEY"),
+# )
 client = OpenAI(
     api_key=os.environ.get("OPENAI_API_KEY"),
+    base_url=os.environ.get(
+        "OPENAI_BASE_URL",
+        "https://genaiapi.shanghaitech.edu.cn/api/v1/start"
+    ),
 )
 
 
@@ -106,10 +113,15 @@ def get_response(
     :return: A dictionary containing the role (`"assistant"`) and response content.
     :rtype: dict[str, str]
     """
+    # chat_completion = client.chat.completions.create(
+    #     messages=messages
+    #     , model="gpt-4o"
+    # )
     chat_completion = client.chat.completions.create(
-        messages=messages
-        , model="gpt-4o"
+        messages=messages,
+        model=os.environ.get("OPENAI_MODEL", "GPT-4.1-mini")
     )
+
     return {
         "role": "assistant"
         , "content": chat_completion.choices[0].message.content.strip()

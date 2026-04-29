@@ -12,6 +12,12 @@ import importlib.util
 import multiprocessing
 import json
 import sys
+import asyncio
+import traceback
+
+if sys.platform.startswith("win"):
+    asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+
 from collections import deque
 from enum import Enum
 from functools import partial
@@ -24,6 +30,7 @@ import numpy as np
 from .graphdb import janus
 from gremlin_python.structure.graph import GraphTraversalSource
 from .prompt import build_prompt, build_prompt_from_react_file, get_response
+from gremlin_python.process.anonymous_traversal import traversal
 
 # This is the only way I've found to execute the transformation using multiprocessing
 global schema
@@ -255,16 +262,17 @@ def load_schema(schema_name: str):
     :raises ValueError: If the module's loader is not found.
     """
     # This is the only way I found to execute the multiprocessing
-    global schema
-    p: Path
+    # global schema
+    # p: Path
+    # if s := SCHEMAS.get(schema_name):
+    #     p = s
+    # else:
+    #     p = Path(schema_name)
+    # schema = load_module("schema", p)
+    # return 
     if s := SCHEMAS.get(schema_name):
-        p = s
-    else:
-        p = Path(schema_name)
-
-    schema = load_module("schema", p)
-        
-    return 
+        return s
+    return Path(schema_name)
     
 
 def build_main_argparser() -> argparse.ArgumentParser:
@@ -513,15 +521,36 @@ def parse_file_and_update_db(
         , conn_constructor=conn_constructor
     )
     if conns := results[0]:
+        # for item in conns:
+        #     try:
+        #         janus.add_connection(item, graph)
+        #     except TypeError:
+        #         janus.add_connection(item, graph)
+        #     except:
+        #         with open("errors.dat", 'w') as f:
+        #             f.write(f"{file_name}\n")
+        #         continue
         for item in conns:
             try:
                 janus.add_connection(item, graph)
             except TypeError:
-                janus.add_connection(item, graph)
-            except:
-                with open("errors.dat", 'w') as f:
-                    f.write(f"{file_name}\n")
+                try:
+                    janus.add_connection(item, graph)
+                except Exception as e:
+                    print(f"\nADD_CONNECTION TypeError retry failed in {file_name}")
+                    print("Item:", item)
+                    traceback.print_exc()
+                    with open("errors.dat", "a", encoding="utf-8") as f:
+                        f.write(f"{file_name}\n{repr(e)}\n\n")
+                    continue
+            except Exception as e:
+                print(f"\nADD_CONNECTION failed in {file_name}")
+                print("Item:", item)
+                traceback.print_exc()
+                with open("errors.dat", "a", encoding="utf-8") as f:
+                    f.write(f"{file_name}\n{repr(e)}\n\n")
                 continue
+
     return results
 
 
@@ -531,8 +560,10 @@ def get_json_from_react(
     , port: int
     , graph_name: str
     , results_path: Path
+    , schema_path: Path
     , substitutions: Union[dict[str, Any], None] = None
 ) -> list[dict[str, str]]:
+
     """
     Process a JSON file (react file) to generate the final JSON output by making
     multiple iterations (optimization runs). Optionally uses RAG (if substitutions
@@ -561,9 +592,17 @@ def get_json_from_react(
         graph = None
     
     rag_active = substitutions is not None and graph is not None
-    # Code substitution, load schema file
+    # # Code substitution, load schema file
+    # if schema.__file__ is None:
+    #     raise ValueError
+    # with open(schema.__file__, 'r', encoding="utf8") as f:
+    #     rag_dict = {"code": f.readlines()}
+
+    # Load schema inside this process. This is required on Windows because
+    # multiprocessing workers do not inherit the parent's global variables.
+    schema = load_module("schema", Path(schema_path))
     if schema.__file__ is None:
-        raise ValueError
+        raise ValueError(f"Invalid schema file: {schema_path}")
     with open(schema.__file__, 'r', encoding="utf8") as f:
         rag_dict = {"code": f.readlines()}
 
@@ -763,12 +802,20 @@ def exec_parser(
         - schema: The loaded schema module containing a Connection class
     :type args: argparse.Namespace
     """
+    schema = load_module("schema", Path(args.schema))
+
     rfiles = list(args.input_dir.glob("*.json"))
-    graph = get_graph_from_janus(
-            address=args.address
-            , port=args.port
-            , graph_name=args.graph_name
-        )
+    # graph = get_graph_from_janus(
+    #         address=args.address
+    #         , port=args.port
+    #         , graph_name=args.graph_name
+    #     )
+    conn = janus.connect(
+            address=args.address,
+            port=args.port,
+            graph_name=args.graph_name
+        )       
+    graph = traversal().withRemote(conn)
 
     sync_fn = partial(
         parse_file_and_update_db
@@ -804,6 +851,7 @@ def exec_parser(
         print("")
         print(f"Saving graph file at: {args.output_file}")
         janus.save_graph(graph, args.output_file)
+    conn.close()
 
 
 def exec_transform(
@@ -836,13 +884,22 @@ def exec_transform(
     else:
         subs = None
 
+    # exec_fn_args = {
+    #     "results_path": args.output_dir
+    #     , "substitutions": subs
+    #     , "address": args.address
+    #     , "port": args.port
+    #     , "graph_name": args.graph_name
+    # }
     exec_fn_args = {
         "results_path": args.output_dir
         , "substitutions": subs
         , "address": args.address
         , "port": args.port
         , "graph_name": args.graph_name
+        , "schema_path": args.schema
     }
+
 
     if args.no_parallel:
         sequential_exec_transform(
@@ -865,6 +922,7 @@ def exec_transform(
         )
 
     if args.output_file:
+        args.output_file.parent.mkdir(parents=True, exist_ok=True)
         graph = get_graph_from_janus(
             address=args.address
             , port=args.port

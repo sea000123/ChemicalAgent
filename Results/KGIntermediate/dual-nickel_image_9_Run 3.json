@@ -1,0 +1,134 @@
+```json
+[
+  {
+    "source": {
+      "label": "Study",
+      "name": "dual-nickel_image_9"
+    },
+    "target": {
+      "label": "Reaction",
+      "uuid": "dual-nickel_image_9_3"
+    },
+    "label": "HasReaction",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "uuid": "dual-nickel_image_9_3"
+    },
+    "target": {
+      "label": "Compound",
+      "name": "FC(F)(F)c1ccc(I)cc1"
+    },
+    "label": "HasReactant",
+    "properties": {
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "uuid": "dual-nickel_image_9_3"
+    },
+    "target": {
+      "label": "Compound",
+      "name": "C1COCCN1"
+    },
+    "label": "HasReactant",
+    "properties": {
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "uuid": "dual-nickel_image_9_3"
+    },
+    "target": {
+      "label": "Compound",
+      "name": "44"
+    },
+    "label": "HasProduct",
+    "properties": {
+      "value": 31,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "uuid": "dual-nickel_image_9_3"
+    },
+    "target": {
+      "label": "Compound",
+      "name": "42"
+    },
+    "label": "HasCatalyst",
+    "properties": {
+      "value": 1,
+      "unit": "equiv"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "uuid": "dual-nickel_image_9_3"
+    },
+    "target": {
+      "label": "Compound",
+      "name": "43"
+    },
+    "label": "HasAdditive",
+    "properties": {
+      "value": 3,
+      "unit": "equiv"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "uuid": "dual-nickel_image_9_3"
+    },
+    "target": {
+      "label": "Compound",
+      "name": "FeCp2BF4"
+    },
+    "label": "HasAdditive",
+    "properties": {
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "uuid": "dual-nickel_image_9_3"
+    },
+    "target": {
+      "label": "Compound",
+      "name": "ACN"
+    },
+    "label": "HasSolvent",
+    "properties": {
+      "value": 0.05,
+      "unit": "M"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "uuid": "dual-nickel_image_9_3"
+    },
+    "target": {
+      "label": "Quantity",
+      "unit": "h",
+      "value": 3
+    },
+    "label": "HasDuration",
+    "properties": {}
+  }
+]
+```

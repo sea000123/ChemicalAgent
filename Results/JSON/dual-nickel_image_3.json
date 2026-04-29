@@ -1,0 +1,552 @@
+{
+    "SMILES": {
+        "reactants": [
+            "FC(F)(F)c1ccc(I)cc1",
+            "C1COCCN1"
+        ],
+        "products": [
+            "O=C(Oc1ccc(C(F)(F)F)cc1)N1CCOCC1"
+        ]
+    },
+    "Optimization Runs": {
+        "Entry 1": {
+            "NEW_KEY1": "No deviation",
+            "NEW_KEY2": "Standard conditions applied",
+            "Entry": 1,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "TMG",
+                    "2.0 equiv"
+                ],
+                [
+                    "4DPAPN 7a",
+                    "0.1 %"
+                ],
+                [
+                    "Ni(dtbbpy)Br2",
+                    "5 %"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "N.R."
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "N.R.",
+            "Yield": "78%",
+            "Footnote": "a"
+        },
+        "Entry 2": {
+            "NEW_KEY1": "No nickel",
+            "NEW_KEY2": "No Ni(dtbbpy)Br2 catalyst used",
+            "Entry": 2,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "TMG",
+                    "2.0 equiv"
+                ],
+                [
+                    "4DPAPN 7a",
+                    "0.1 %"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "N.R."
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "N.R.",
+            "Yield": "0%",
+            "Footnote": "a"
+        },
+        "Entry 3": {
+            "NEW_KEY1": "No photocatalyst",
+            "NEW_KEY2": "No 4DPAPN 7a",
+            "Entry": 3,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "TMG",
+                    "2.0 equiv"
+                ],
+                [
+                    "Ni(dtbbpy)Br2",
+                    "5 %"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "N.R."
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "N.R.",
+            "Yield": "<1%",
+            "Footnote": "a"
+        },
+        "Entry 4": {
+            "NEW_KEY1": "Dark",
+            "NEW_KEY2": "No light irradiaton",
+            "Entry": 4,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "TMG",
+                    "2.0 equiv"
+                ],
+                [
+                    "4DPAPN 7a",
+                    "0.1 %"
+                ],
+                [
+                    "Ni(dtbbpy)Br2",
+                    "5 %"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "N.R."
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "N.R.",
+            "Yield": "0%",
+            "Footnote": "a"
+        },
+        "Entry 5": {
+            "NEW_KEY1": "Blue LEDs instead of 2x30 W CFL",
+            "NEW_KEY2": "Light source change",
+            "Entry": 5,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "TMG",
+                    "2.0 equiv"
+                ],
+                [
+                    "4DPAPN 7a",
+                    "0.1 %"
+                ],
+                [
+                    "Ni(dtbbpy)Br2",
+                    "5 %"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "N.R."
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "N.R.",
+            "Yield": "66%",
+            "Footnote": "a"
+        },
+        "Entry 6": {
+            "NEW_KEY1": "Bipyridine instead of dtbbpy",
+            "NEW_KEY2": "Ligand change",
+            "Entry": 6,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "TMG",
+                    "2.0 equiv"
+                ],
+                [
+                    "4DPAPN 7a",
+                    "0.1 %"
+                ],
+                [
+                    "Ni(bipyridine)Br2",
+                    "5 %"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "N.R."
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "N.R.",
+            "Yield": "28%",
+            "Footnote": "a"
+        },
+        "Entry 7": {
+            "NEW_KEY1": "1.1 equiv morpholine instead of 2 equiv",
+            "NEW_KEY2": "Reduced morpholine equivalence",
+            "Entry": 7,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "TMG",
+                    "2.0 equiv"
+                ],
+                [
+                    "4DPAPN 7a",
+                    "0.1 %"
+                ],
+                [
+                    "Ni(dtbbpy)Br2",
+                    "5 %"
+                ],
+                [
+                    "morpholine",
+                    "1.1 equiv"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "N.R."
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "N.R.",
+            "Yield": "72%",
+            "Footnote": "a"
+        },
+        "Entry 8": {
+            "NEW_KEY1": "1.1 equiv morpholine and TMG instead of 2 equiv morpholine and 2 equiv TMG",
+            "NEW_KEY2": "Morpholine and TMG equivalence reduced",
+            "Entry": 8,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "TMG",
+                    "1.1 equiv"
+                ],
+                [
+                    "4DPAPN 7a",
+                    "0.1 %"
+                ],
+                [
+                    "Ni(dtbbpy)Br2",
+                    "5 %"
+                ],
+                [
+                    "morpholine",
+                    "1.1 equiv"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "N.R."
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "N.R.",
+            "Yield": "62%",
+            "Footnote": "a"
+        },
+        "Entry 9": {
+            "NEW_KEY1": "i-Pr2NH as base instead of TMG",
+            "NEW_KEY2": "Base substitution",
+            "Entry": 9,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "i-Pr2NH",
+                    "2.0 equiv"
+                ],
+                [
+                    "4DPAPN 7a",
+                    "0.1 %"
+                ],
+                [
+                    "Ni(dtbbpy)Br2",
+                    "5 %"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "N.R."
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "N.R.",
+            "Yield": "44%",
+            "Footnote": "a"
+        },
+        "Entry 10": {
+            "NEW_KEY1": "i-Pr2NEt as base instead of TMG",
+            "NEW_KEY2": "Base substitution",
+            "Entry": 10,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "i-Pr2NEt",
+                    "2.0 equiv"
+                ],
+                [
+                    "4DPAPN 7a",
+                    "0.1 %"
+                ],
+                [
+                    "Ni(dtbbpy)Br2",
+                    "5 %"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "N.R."
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "N.R.",
+            "Yield": "9%",
+            "Footnote": "a"
+        },
+        "Entry 11": {
+            "NEW_KEY1": "Cs2CO3 as base instead of TMG",
+            "NEW_KEY2": "Base substitution",
+            "Entry": 11,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "Cs2CO3",
+                    "2.0 equiv"
+                ],
+                [
+                    "4DPAPN 7a",
+                    "0.1 %"
+                ],
+                [
+                    "Ni(dtbbpy)Br2",
+                    "5 %"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "N.R."
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "N.R.",
+            "Yield": "77%",
+            "Footnote": "a"
+        },
+        "Entry 12": {
+            "NEW_KEY1": "DBU as base instead of TMG",
+            "NEW_KEY2": "Base substitution",
+            "Entry": 12,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "DBU",
+                    "2.0 equiv"
+                ],
+                [
+                    "4DPAPN 7a",
+                    "0.1 %"
+                ],
+                [
+                    "Ni(dtbbpy)Br2",
+                    "5 %"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "N.R."
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "N.R.",
+            "Yield": "69%",
+            "Footnote": "a"
+        },
+        "Entry 13": {
+            "NEW_KEY1": "Added 1 equiv H2O",
+            "NEW_KEY2": "Water additive",
+            "Entry": 13,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "TMG",
+                    "2.0 equiv"
+                ],
+                [
+                    "4DPAPN 7a",
+                    "0.1 %"
+                ],
+                [
+                    "Ni(dtbbpy)Br2",
+                    "5 %"
+                ],
+                [
+                    "H2O",
+                    "1 equiv"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "N.R."
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "N.R.",
+            "Yield": "65%",
+            "Footnote": "a"
+        },
+        "Entry 14": {
+            "NEW_KEY1": "Added 1 equiv O2",
+            "NEW_KEY2": "Oxygen additive",
+            "Entry": 14,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "TMG",
+                    "2.0 equiv"
+                ],
+                [
+                    "4DPAPN 7a",
+                    "0.1 %"
+                ],
+                [
+                    "Ni(dtbbpy)Br2",
+                    "5 %"
+                ],
+                [
+                    "O2",
+                    "1 equiv"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "N.R."
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "N.R.",
+            "Yield": "68%",
+            "Footnote": "a"
+        },
+        "Entry 15": {
+            "NEW_KEY1": "Added 1 equiv stilbene",
+            "NEW_KEY2": "Stilbene additive",
+            "Entry": 15,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "TMG",
+                    "2.0 equiv"
+                ],
+                [
+                    "4DPAPN 7a",
+                    "0.1 %"
+                ],
+                [
+                    "Ni(dtbbpy)Br2",
+                    "5 %"
+                ],
+                [
+                    "stilbene",
+                    "1 equiv"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "N.R."
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "N.R.",
+            "Yield": "76%",
+            "Footnote": "a"
+        },
+        "Entry 16": {
+            "NEW_KEY1": "Ir(ppy)3 instead of 4DPAPN",
+            "NEW_KEY2": "Photocatalyst substitution",
+            "Entry": 16,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "TMG",
+                    "2.0 equiv"
+                ],
+                [
+                    "Ir(ppy)3",
+                    "0.1 %"
+                ],
+                [
+                    "Ni(dtbbpy)Br2",
+                    "5 %"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "N.R."
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "N.R.",
+            "Yield": "71%",
+            "Footnote": "a"
+        },
+        "Entry 17": {
+            "NEW_KEY1": "4CzIPN instead of 4DPAPN",
+            "NEW_KEY2": "Photocatalyst substitution",
+            "Entry": 17,
+            "Anode": "N.R.",
+            "Cathode": "N.R.",
+            "Electrolytes": [
+                [
+                    "TMG",
+                    "2.0 equiv"
+                ],
+                [
+                    "4CzIPN",
+                    "0.1 %"
+                ],
+                [
+                    "Ni(dtbbpy)Br2",
+                    "5 %"
+                ]
+            ],
+            "Solvents": [
+                [
+                    "DMF",
+                    "N.R."
+                ]
+            ],
+            "Duration": "22 h",
+            "Air/Inert": "N.R.",
+            "Yield": "62%",
+            "Footnote": "a"
+        }
+    }
+}
