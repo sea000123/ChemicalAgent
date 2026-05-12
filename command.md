@@ -108,3 +108,4 @@ mermaid CFG   --out_location ./Results/JSON/out.json
 python -c "import os, requests, json; url='https://genaiapi.shanghaitech.edu.cn/api/v1/start'; headers={'Authorization':'Bearer '+os.environ.get('OPENAI_API_KEY',''), 'Content-Type':'application/json'}; payload={'model':'GPT-4.1-mini','messages':[{'role':'user','content':'你好'}]}; r=requests.post(url, headers=headers, json=payload, timeout=60); print(r.status_code); print(r.text[:2000])"
 ```
 
+- `one_pdf.graphml`: 使用论文中作为例图的pdf进行绘制
