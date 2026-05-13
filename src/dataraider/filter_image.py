@@ -93,8 +93,20 @@ def filter_images(info:DataRaiderInfo,
                 )
                 response = requests.post(url, headers=headers, json=payload,timeout=60)
 
+                print("STATUS:", response.status_code)
+                print("TEXT:", response.text)
+
                 response.raise_for_status()  # Raise error if the request failed
                 data=response.json()
+                
+                if 'choices' not in data:
+                    error_message = (
+                        data.get("message")
+                        or data.get("error", {}).get("message")
+                        or "Unknown API error"
+                    )
+                    raise RuntimeError(error_message)
+
                 if "error" in data:
                     raise RuntimeError(data["error"].get("message", str(data["error"])))
                 response_data = response.json()['choices'][0]['message']['content']

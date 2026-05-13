@@ -1,13 +1,16 @@
-```json
 [
   {
     "source": {
       "label": "Study",
-      "name": "dual-nickel_image_3"
+      "properties": {
+        "name": "dual-nickel_image_3"
+      }
     },
     "target": {
       "label": "Reaction",
-      "uuid": "dual-nickel_image_3_Entry 1"
+      "properties": {
+        "uuid": "dual-nickel_image_3_1"
+      }
     },
     "label": "HasReaction",
     "properties": {}
@@ -15,58 +18,68 @@
   {
     "source": {
       "label": "Reaction",
-      "uuid": "dual-nickel_image_3_Entry 1"
+      "properties": {
+        "uuid": "dual-nickel_image_3_1"
+      }
     },
     "target": {
       "label": "Compound",
-      "name": "FC(F)(F)c1ccc(I)cc1"
+      "properties": {
+        "name": "FC(F)(F)c1ccc(I)cc1"
+      }
     },
     "label": "HasReactant",
-    "properties": {
-      "value": 1,
-      "unit": "equiv"
-    }
+    "properties": {}
   },
   {
     "source": {
       "label": "Reaction",
-      "uuid": "dual-nickel_image_3_Entry 1"
+      "properties": {
+        "uuid": "dual-nickel_image_3_1"
+      }
     },
     "target": {
       "label": "Compound",
-      "name": "C1COCCN1"
+      "properties": {
+        "name": "C1COCCN1"
+      }
     },
     "label": "HasReactant",
-    "properties": {
-      "value": 1,
-      "unit": null
-    }
+    "properties": {}
   },
   {
     "source": {
       "label": "Reaction",
-      "uuid": "dual-nickel_image_3_Entry 1"
+      "properties": {
+        "uuid": "dual-nickel_image_3_1"
+      }
     },
     "target": {
       "label": "Compound",
-      "name": "O=C(Oc1ccc(C(F)(F)F)cc1)N1CCOCC1"
+      "properties": {
+        "name": "O=C(Oc1ccc(C(F)(F)F)cc1)N1CCOCC1"
+      }
     },
     "label": "HasProduct",
     "properties": {
-      "value": 78,
+      "value": 78.0,
       "unit": "%"
     }
   },
   {
     "source": {
       "label": "Reaction",
-      "uuid": "dual-nickel_image_3_Entry 1"
+      "properties": {
+        "uuid": "dual-nickel_image_3_1"
+      }
     },
     "target": {
       "label": "Compound",
-      "name": "TMG"
+      "properties": {
+        "name": "TMG"
+      }
     },
-    "label": "HasAdditive",
+    "label": "HasElectrolyte",
     "properties": {
       "value": 2.0,
       "unit": "equiv"
@@ -75,13 +88,17 @@
   {
     "source": {
       "label": "Reaction",
-      "uuid": "dual-nickel_image_3_Entry 1"
+      "properties": {
+        "uuid": "dual-nickel_image_3_1"
+      }
     },
     "target": {
       "label": "Compound",
-      "name": "4DPAPN 7a"
+      "properties": {
+        "name": "4DPAPN 7a"
+      }
     },
-    "label": "HasPhotocatalyst",
+    "label": "HasElectrolyte",
     "properties": {
       "value": 0.1,
       "unit": "%"
@@ -90,45 +107,3727 @@
   {
     "source": {
       "label": "Reaction",
-      "uuid": "dual-nickel_image_3_Entry 1"
+      "properties": {
+        "uuid": "dual-nickel_image_3_1"
+      }
     },
     "target": {
       "label": "Compound",
-      "name": "Ni(dtbbpy)Br2"
+      "properties": {
+        "name": "Ni(dtbbpy)Br2"
+      }
     },
-    "label": "HasCatalyst",
+    "label": "HasElectrolyte",
     "properties": {
-      "value": 5,
+      "value": 5.0,
       "unit": "%"
     }
   },
   {
     "source": {
       "label": "Reaction",
-      "uuid": "dual-nickel_image_3_Entry 1"
+      "properties": {
+        "uuid": "dual-nickel_image_3_1"
+      }
     },
     "target": {
       "label": "Compound",
-      "name": "DMF"
+      "properties": {
+        "name": "DMF"
+      }
     },
     "label": "HasSolvent",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_1"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "value": 22.0,
+        "unit": "h"
+      }
+    },
+    "label": "HasDuration",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_1"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "value": 25.0,
+        "unit": "°„C"
+      }
+    },
+    "label": "HasTemperature",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_1"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "No deviation"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_1"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "Standard conditions applied"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_1"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "a"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Study",
+      "properties": {
+        "name": "dual-nickel_image_3"
+      }
+    },
+    "target": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_2"
+      }
+    },
+    "label": "HasReaction",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_2"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "FC(F)(F)c1ccc(I)cc1"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_2"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "C1COCCN1"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_2"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "O=C(Oc1ccc(C(F)(F)F)cc1)N1CCOCC1"
+      }
+    },
+    "label": "HasProduct",
     "properties": {
-      "value": null,
-      "unit": null
+      "value": 0.0,
+      "unit": "%"
     }
   },
   {
     "source": {
       "label": "Reaction",
-      "uuid": "dual-nickel_image_3_Entry 1"
+      "properties": {
+        "uuid": "dual-nickel_image_3_2"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "TMG"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 2.0,
+      "unit": "equiv"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_2"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "4DPAPN 7a"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 0.1,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_2"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "DMF"
+      }
+    },
+    "label": "HasSolvent",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_2"
+      }
     },
     "target": {
       "label": "Quantity",
-      "unit": "h",
-      "value": 22
+      "properties": {
+        "value": 22.0,
+        "unit": "h"
+      }
     },
     "label": "HasDuration",
     "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_2"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "value": 25.0,
+        "unit": "°„C"
+      }
+    },
+    "label": "HasTemperature",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_2"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "No nickel"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_2"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "No Ni(dtbbpy)Br2 catalyst used"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_2"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "a"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Study",
+      "properties": {
+        "name": "dual-nickel_image_3"
+      }
+    },
+    "target": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_3"
+      }
+    },
+    "label": "HasReaction",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_3"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "FC(F)(F)c1ccc(I)cc1"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_3"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "C1COCCN1"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_3"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "O=C(Oc1ccc(C(F)(F)F)cc1)N1CCOCC1"
+      }
+    },
+    "label": "HasProduct",
+    "properties": {
+      "value": 0.5,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_3"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "TMG"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 2.0,
+      "unit": "equiv"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_3"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "Ni(dtbbpy)Br2"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 5.0,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_3"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "DMF"
+      }
+    },
+    "label": "HasSolvent",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_3"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "value": 22.0,
+        "unit": "h"
+      }
+    },
+    "label": "HasDuration",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_3"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "value": 25.0,
+        "unit": "°„C"
+      }
+    },
+    "label": "HasTemperature",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_3"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "No photocatalyst"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_3"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "No 4DPAPN 7a"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_3"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "a"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Study",
+      "properties": {
+        "name": "dual-nickel_image_3"
+      }
+    },
+    "target": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_4"
+      }
+    },
+    "label": "HasReaction",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_4"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "FC(F)(F)c1ccc(I)cc1"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_4"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "C1COCCN1"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_4"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "O=C(Oc1ccc(C(F)(F)F)cc1)N1CCOCC1"
+      }
+    },
+    "label": "HasProduct",
+    "properties": {
+      "value": 0.0,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_4"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "TMG"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 2.0,
+      "unit": "equiv"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_4"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "4DPAPN 7a"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 0.1,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_4"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "Ni(dtbbpy)Br2"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 5.0,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_4"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "DMF"
+      }
+    },
+    "label": "HasSolvent",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_4"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "value": 22.0,
+        "unit": "h"
+      }
+    },
+    "label": "HasDuration",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_4"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "value": 25.0,
+        "unit": "°„C"
+      }
+    },
+    "label": "HasTemperature",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_4"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "Dark"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_4"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "No light irradiaton"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_4"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "a"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Study",
+      "properties": {
+        "name": "dual-nickel_image_3"
+      }
+    },
+    "target": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_5"
+      }
+    },
+    "label": "HasReaction",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_5"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "FC(F)(F)c1ccc(I)cc1"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_5"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "C1COCCN1"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_5"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "O=C(Oc1ccc(C(F)(F)F)cc1)N1CCOCC1"
+      }
+    },
+    "label": "HasProduct",
+    "properties": {
+      "value": 66.0,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_5"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "TMG"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 2.0,
+      "unit": "equiv"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_5"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "4DPAPN 7a"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 0.1,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_5"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "Ni(dtbbpy)Br2"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 5.0,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_5"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "DMF"
+      }
+    },
+    "label": "HasSolvent",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_5"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "value": 22.0,
+        "unit": "h"
+      }
+    },
+    "label": "HasDuration",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_5"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "value": 25.0,
+        "unit": "°„C"
+      }
+    },
+    "label": "HasTemperature",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_5"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "Blue LEDs instead of 2x30 W CFL"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_5"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "Light source change"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_5"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "a"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Study",
+      "properties": {
+        "name": "dual-nickel_image_3"
+      }
+    },
+    "target": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_6"
+      }
+    },
+    "label": "HasReaction",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_6"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "FC(F)(F)c1ccc(I)cc1"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_6"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "C1COCCN1"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_6"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "O=C(Oc1ccc(C(F)(F)F)cc1)N1CCOCC1"
+      }
+    },
+    "label": "HasProduct",
+    "properties": {
+      "value": 28.0,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_6"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "TMG"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 2.0,
+      "unit": "equiv"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_6"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "4DPAPN 7a"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 0.1,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_6"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "Ni(bipyridine)Br2"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 5.0,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_6"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "DMF"
+      }
+    },
+    "label": "HasSolvent",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_6"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "value": 22.0,
+        "unit": "h"
+      }
+    },
+    "label": "HasDuration",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_6"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "value": 25.0,
+        "unit": "°„C"
+      }
+    },
+    "label": "HasTemperature",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_6"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "Bipyridine instead of dtbbpy"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_6"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "Ligand change"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_6"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "a"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Study",
+      "properties": {
+        "name": "dual-nickel_image_3"
+      }
+    },
+    "target": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_7"
+      }
+    },
+    "label": "HasReaction",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_7"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "FC(F)(F)c1ccc(I)cc1"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_7"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "C1COCCN1"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_7"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "O=C(Oc1ccc(C(F)(F)F)cc1)N1CCOCC1"
+      }
+    },
+    "label": "HasProduct",
+    "properties": {
+      "value": 72.0,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_7"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "TMG"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 2.0,
+      "unit": "equiv"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_7"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "4DPAPN 7a"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 0.1,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_7"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "Ni(dtbbpy)Br2"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 5.0,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_7"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "morpholine"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 1.1,
+      "unit": "equiv"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_7"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "DMF"
+      }
+    },
+    "label": "HasSolvent",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_7"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "value": 22.0,
+        "unit": "h"
+      }
+    },
+    "label": "HasDuration",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_7"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "value": 25.0,
+        "unit": "°„C"
+      }
+    },
+    "label": "HasTemperature",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_7"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "1.1 equiv morpholine instead of 2 equiv"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_7"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "Reduced morpholine equivalence"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_7"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "a"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Study",
+      "properties": {
+        "name": "dual-nickel_image_3"
+      }
+    },
+    "target": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_8"
+      }
+    },
+    "label": "HasReaction",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_8"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "FC(F)(F)c1ccc(I)cc1"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_8"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "C1COCCN1"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_8"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "O=C(Oc1ccc(C(F)(F)F)cc1)N1CCOCC1"
+      }
+    },
+    "label": "HasProduct",
+    "properties": {
+      "value": 62.0,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_8"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "TMG"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 1.1,
+      "unit": "equiv"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_8"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "4DPAPN 7a"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 0.1,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_8"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "Ni(dtbbpy)Br2"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 5.0,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_8"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "morpholine"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 1.1,
+      "unit": "equiv"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_8"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "DMF"
+      }
+    },
+    "label": "HasSolvent",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_8"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "value": 22.0,
+        "unit": "h"
+      }
+    },
+    "label": "HasDuration",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_8"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "value": 25.0,
+        "unit": "°„C"
+      }
+    },
+    "label": "HasTemperature",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_8"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "1.1 equiv morpholine and TMG instead of 2 equiv morpholine and 2 equiv TMG"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_8"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "Morpholine and TMG equivalence reduced"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_8"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "a"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Study",
+      "properties": {
+        "name": "dual-nickel_image_3"
+      }
+    },
+    "target": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_9"
+      }
+    },
+    "label": "HasReaction",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_9"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "FC(F)(F)c1ccc(I)cc1"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_9"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "C1COCCN1"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_9"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "O=C(Oc1ccc(C(F)(F)F)cc1)N1CCOCC1"
+      }
+    },
+    "label": "HasProduct",
+    "properties": {
+      "value": 44.0,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_9"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "i-Pr2NH"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 2.0,
+      "unit": "equiv"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_9"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "4DPAPN 7a"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 0.1,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_9"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "Ni(dtbbpy)Br2"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 5.0,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_9"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "DMF"
+      }
+    },
+    "label": "HasSolvent",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_9"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "value": 22.0,
+        "unit": "h"
+      }
+    },
+    "label": "HasDuration",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_9"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "value": 25.0,
+        "unit": "°„C"
+      }
+    },
+    "label": "HasTemperature",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_9"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "i-Pr2NH as base instead of TMG"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_9"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "Base substitution"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_9"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "a"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Study",
+      "properties": {
+        "name": "dual-nickel_image_3"
+      }
+    },
+    "target": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_10"
+      }
+    },
+    "label": "HasReaction",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_10"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "FC(F)(F)c1ccc(I)cc1"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_10"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "C1COCCN1"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_10"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "O=C(Oc1ccc(C(F)(F)F)cc1)N1CCOCC1"
+      }
+    },
+    "label": "HasProduct",
+    "properties": {
+      "value": 9.0,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_10"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "i-Pr2NEt"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 2.0,
+      "unit": "equiv"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_10"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "4DPAPN 7a"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 0.1,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_10"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "Ni(dtbbpy)Br2"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 5.0,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_10"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "DMF"
+      }
+    },
+    "label": "HasSolvent",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_10"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "value": 22.0,
+        "unit": "h"
+      }
+    },
+    "label": "HasDuration",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_10"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "value": 25.0,
+        "unit": "°„C"
+      }
+    },
+    "label": "HasTemperature",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_10"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "i-Pr2NEt as base instead of TMG"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_10"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "Base substitution"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_10"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "a"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Study",
+      "properties": {
+        "name": "dual-nickel_image_3"
+      }
+    },
+    "target": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_11"
+      }
+    },
+    "label": "HasReaction",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_11"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "FC(F)(F)c1ccc(I)cc1"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_11"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "C1COCCN1"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_11"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "O=C(Oc1ccc(C(F)(F)F)cc1)N1CCOCC1"
+      }
+    },
+    "label": "HasProduct",
+    "properties": {
+      "value": 77.0,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_11"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "Cs2CO3"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 2.0,
+      "unit": "equiv"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_11"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "4DPAPN 7a"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 0.1,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_11"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "Ni(dtbbpy)Br2"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 5.0,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_11"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "DMF"
+      }
+    },
+    "label": "HasSolvent",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_11"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "value": 22.0,
+        "unit": "h"
+      }
+    },
+    "label": "HasDuration",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_11"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "value": 25.0,
+        "unit": "°„C"
+      }
+    },
+    "label": "HasTemperature",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_11"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "Cs2CO3 as base instead of TMG"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_11"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "Base substitution"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_11"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "a"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Study",
+      "properties": {
+        "name": "dual-nickel_image_3"
+      }
+    },
+    "target": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_12"
+      }
+    },
+    "label": "HasReaction",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_12"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "FC(F)(F)c1ccc(I)cc1"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_12"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "C1COCCN1"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_12"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "O=C(Oc1ccc(C(F)(F)F)cc1)N1CCOCC1"
+      }
+    },
+    "label": "HasProduct",
+    "properties": {
+      "value": 69.0,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_12"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "DBU"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 2.0,
+      "unit": "equiv"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_12"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "4DPAPN 7a"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 0.1,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_12"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "Ni(dtbbpy)Br2"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 5.0,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_12"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "DMF"
+      }
+    },
+    "label": "HasSolvent",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_12"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "value": 22.0,
+        "unit": "h"
+      }
+    },
+    "label": "HasDuration",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_12"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "value": 25.0,
+        "unit": "°„C"
+      }
+    },
+    "label": "HasTemperature",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_12"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "DBU as base instead of TMG"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_12"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "Base substitution"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_12"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "a"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Study",
+      "properties": {
+        "name": "dual-nickel_image_3"
+      }
+    },
+    "target": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_13"
+      }
+    },
+    "label": "HasReaction",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_13"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "FC(F)(F)c1ccc(I)cc1"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_13"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "C1COCCN1"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_13"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "O=C(Oc1ccc(C(F)(F)F)cc1)N1CCOCC1"
+      }
+    },
+    "label": "HasProduct",
+    "properties": {
+      "value": 65.0,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_13"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "TMG"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 2.0,
+      "unit": "equiv"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_13"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "4DPAPN 7a"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 0.1,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_13"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "Ni(dtbbpy)Br2"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 5.0,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_13"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "H2O"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 1.0,
+      "unit": "equiv"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_13"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "DMF"
+      }
+    },
+    "label": "HasSolvent",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_13"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "value": 22.0,
+        "unit": "h"
+      }
+    },
+    "label": "HasDuration",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_13"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "value": 25.0,
+        "unit": "°„C"
+      }
+    },
+    "label": "HasTemperature",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_13"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "Added 1 equiv H2O"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_13"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "Water additive"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_13"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "a"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Study",
+      "properties": {
+        "name": "dual-nickel_image_3"
+      }
+    },
+    "target": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_14"
+      }
+    },
+    "label": "HasReaction",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_14"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "FC(F)(F)c1ccc(I)cc1"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_14"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "C1COCCN1"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_14"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "O=C(Oc1ccc(C(F)(F)F)cc1)N1CCOCC1"
+      }
+    },
+    "label": "HasProduct",
+    "properties": {
+      "value": 68.0,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_14"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "TMG"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 2.0,
+      "unit": "equiv"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_14"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "4DPAPN 7a"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 0.1,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_14"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "Ni(dtbbpy)Br2"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 5.0,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_14"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "O2"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 1.0,
+      "unit": "equiv"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_14"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "DMF"
+      }
+    },
+    "label": "HasSolvent",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_14"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "value": 22.0,
+        "unit": "h"
+      }
+    },
+    "label": "HasDuration",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_14"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "value": 25.0,
+        "unit": "°„C"
+      }
+    },
+    "label": "HasTemperature",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_14"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "Added 1 equiv O2"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_14"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "Oxygen additive"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_14"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "a"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Study",
+      "properties": {
+        "name": "dual-nickel_image_3"
+      }
+    },
+    "target": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_15"
+      }
+    },
+    "label": "HasReaction",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_15"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "FC(F)(F)c1ccc(I)cc1"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_15"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "C1COCCN1"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_15"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "O=C(Oc1ccc(C(F)(F)F)cc1)N1CCOCC1"
+      }
+    },
+    "label": "HasProduct",
+    "properties": {
+      "value": 76.0,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_15"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "TMG"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 2.0,
+      "unit": "equiv"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_15"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "4DPAPN 7a"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 0.1,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_15"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "Ni(dtbbpy)Br2"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 5.0,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_15"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "stilbene"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 1.0,
+      "unit": "equiv"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_15"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "DMF"
+      }
+    },
+    "label": "HasSolvent",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_15"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "value": 22.0,
+        "unit": "h"
+      }
+    },
+    "label": "HasDuration",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_15"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "value": 25.0,
+        "unit": "°„C"
+      }
+    },
+    "label": "HasTemperature",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_15"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "Added 1 equiv stilbene"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_15"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "Stilbene additive"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_15"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "a"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Study",
+      "properties": {
+        "name": "dual-nickel_image_3"
+      }
+    },
+    "target": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_16"
+      }
+    },
+    "label": "HasReaction",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_16"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "FC(F)(F)c1ccc(I)cc1"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_16"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "C1COCCN1"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_16"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "O=C(Oc1ccc(C(F)(F)F)cc1)N1CCOCC1"
+      }
+    },
+    "label": "HasProduct",
+    "properties": {
+      "value": 71.0,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_16"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "TMG"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 2.0,
+      "unit": "equiv"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_16"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "Ir(ppy)3"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 0.1,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_16"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "Ni(dtbbpy)Br2"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 5.0,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_16"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "DMF"
+      }
+    },
+    "label": "HasSolvent",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_16"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "value": 22.0,
+        "unit": "h"
+      }
+    },
+    "label": "HasDuration",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_16"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "value": 25.0,
+        "unit": "°„C"
+      }
+    },
+    "label": "HasTemperature",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_16"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "Ir(ppy)3 instead of 4DPAPN"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_16"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "Photocatalyst substitution"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_16"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "a"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Study",
+      "properties": {
+        "name": "dual-nickel_image_3"
+      }
+    },
+    "target": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_17"
+      }
+    },
+    "label": "HasReaction",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_17"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "FC(F)(F)c1ccc(I)cc1"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_17"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "C1COCCN1"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_17"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "O=C(Oc1ccc(C(F)(F)F)cc1)N1CCOCC1"
+      }
+    },
+    "label": "HasProduct",
+    "properties": {
+      "value": 62.0,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_17"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "TMG"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 2.0,
+      "unit": "equiv"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_17"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "4CzIPN"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 0.1,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_17"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "Ni(dtbbpy)Br2"
+      }
+    },
+    "label": "HasElectrolyte",
+    "properties": {
+      "value": 5.0,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_17"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "DMF"
+      }
+    },
+    "label": "HasSolvent",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_17"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "value": 22.0,
+        "unit": "h"
+      }
+    },
+    "label": "HasDuration",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_17"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "value": 25.0,
+        "unit": "°„C"
+      }
+    },
+    "label": "HasTemperature",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_17"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "4CzIPN instead of 4DPAPN"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_17"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "Photocatalyst substitution"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_17"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "a"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
   }
 ]
-```

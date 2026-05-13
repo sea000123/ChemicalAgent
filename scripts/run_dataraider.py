@@ -75,7 +75,7 @@ def main():
         "OPENAI_BASE_URL",
         "https://genaiapi.shanghaitech.edu.cn/api/v1/start"
     )
-    vlm_model = os.environ.get("OPENAI_MODEL", "GPT-4.1-mini")
+    vlm_model = os.environ.get("OPENAI_MODEL", "qwen-instruct")
 
     if not api_key:
         print("API key not found. Please set the OPENAI_API_KEY environment variable.")

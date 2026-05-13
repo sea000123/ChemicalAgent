@@ -1,13 +1,16 @@
-```json
 [
   {
     "source": {
       "label": "Study",
-      "name": "dual-nickel_image_3"
+      "properties": {
+        "name": "dual-nickel_image_3"
+      }
     },
     "target": {
       "label": "Reaction",
-      "uuid": "dual-nickel_image_3_Entry 12"
+      "properties": {
+        "uuid": "dual-nickel_image_3_12"
+      }
     },
     "label": "HasReaction",
     "properties": {}
@@ -15,58 +18,68 @@
   {
     "source": {
       "label": "Reaction",
-      "uuid": "dual-nickel_image_3_Entry 12"
+      "properties": {
+        "uuid": "dual-nickel_image_3_12"
+      }
     },
     "target": {
       "label": "Compound",
-      "name": "FC(F)(F)c1ccc(I)cc1"
+      "properties": {
+        "name": "FC(F)(F)c1ccc(I)cc1"
+      }
     },
     "label": "HasReactant",
-    "properties": {
-      "value": 1,
-      "unit": "equiv"
-    }
+    "properties": {}
   },
   {
     "source": {
       "label": "Reaction",
-      "uuid": "dual-nickel_image_3_Entry 12"
+      "properties": {
+        "uuid": "dual-nickel_image_3_12"
+      }
     },
     "target": {
       "label": "Compound",
-      "name": "C1COCCN1"
+      "properties": {
+        "name": "C1COCCN1"
+      }
     },
     "label": "HasReactant",
-    "properties": {
-      "value": null,
-      "unit": null
-    }
+    "properties": {}
   },
   {
     "source": {
       "label": "Reaction",
-      "uuid": "dual-nickel_image_3_Entry 12"
+      "properties": {
+        "uuid": "dual-nickel_image_3_12"
+      }
     },
     "target": {
       "label": "Compound",
-      "name": "O=C(Oc1ccc(C(F)(F)F)cc1)N1CCOCC1"
+      "properties": {
+        "name": "O=C(Oc1ccc(C(F)(F)F)cc1)N1CCOCC1"
+      }
     },
     "label": "HasProduct",
     "properties": {
-      "value": 69,
+      "value": 69.0,
       "unit": "%"
     }
   },
   {
     "source": {
       "label": "Reaction",
-      "uuid": "dual-nickel_image_3_Entry 12"
+      "properties": {
+        "uuid": "dual-nickel_image_3_12"
+      }
     },
     "target": {
       "label": "Compound",
-      "name": "DBU"
+      "properties": {
+        "name": "DBU"
+      }
     },
-    "label": "HasAdditive",
+    "label": "HasElectrolyte",
     "properties": {
       "value": 2.0,
       "unit": "equiv"
@@ -75,13 +88,17 @@
   {
     "source": {
       "label": "Reaction",
-      "uuid": "dual-nickel_image_3_Entry 12"
+      "properties": {
+        "uuid": "dual-nickel_image_3_12"
+      }
     },
     "target": {
       "label": "Compound",
-      "name": "4DPAPN 7a"
+      "properties": {
+        "name": "4DPAPN 7a"
+      }
     },
-    "label": "HasPhotocatalyst",
+    "label": "HasElectrolyte",
     "properties": {
       "value": 0.1,
       "unit": "%"
@@ -90,45 +107,118 @@
   {
     "source": {
       "label": "Reaction",
-      "uuid": "dual-nickel_image_3_Entry 12"
+      "properties": {
+        "uuid": "dual-nickel_image_3_12"
+      }
     },
     "target": {
       "label": "Compound",
-      "name": "Ni(dtbbpy)Br2"
+      "properties": {
+        "name": "Ni(dtbbpy)Br2"
+      }
     },
-    "label": "HasCatalyst",
+    "label": "HasElectrolyte",
     "properties": {
-      "value": 5,
+      "value": 5.0,
       "unit": "%"
     }
   },
   {
     "source": {
       "label": "Reaction",
-      "uuid": "dual-nickel_image_3_Entry 12"
+      "properties": {
+        "uuid": "dual-nickel_image_3_12"
+      }
     },
     "target": {
       "label": "Compound",
-      "name": "DMF"
+      "properties": {
+        "name": "DMF"
+      }
     },
     "label": "HasSolvent",
-    "properties": {
-      "value": null,
-      "unit": null
-    }
+    "properties": {}
   },
   {
     "source": {
       "label": "Reaction",
-      "uuid": "dual-nickel_image_3_Entry 12"
+      "properties": {
+        "uuid": "dual-nickel_image_3_12"
+      }
     },
     "target": {
       "label": "Quantity",
-      "unit": "h",
-      "value": 22
+      "properties": {
+        "value": 22.0,
+        "unit": "h"
+      }
     },
     "label": "HasDuration",
     "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_12"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "value": 25.0,
+        "unit": "°„C"
+      }
+    },
+    "label": "HasTemperature",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_12"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "DBU as base instead of TMG"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_12"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "Base substitution"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel_image_3_12"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "a"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
   }
 ]
-```

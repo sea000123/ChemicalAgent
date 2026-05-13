@@ -8,10 +8,13 @@ $env:Path="$env:JAVA_HOME\bin;$env:Path"
 java -version
 
 #  foreground
+cd ..
 cd janusgraph-1.1.0
 .\bin\gremlin-server.bat .\conf\gremlin-server\gremlin-server.yaml
 
 # mermaid pipeline
+conda activate mermaid
+# paste api
 $env:POPPLER_PATH="C:\Program Files\poppler-25.12.0\Library\bin"
 $env:Path="$env:POPPLER_PATH;$env:Path"
 $env:NO_PROXY="genaiapi.shanghaitech.edu.cn"
@@ -49,7 +52,7 @@ finally:
 '@ | python -
 
 
-kgwizard transform ./Results/JSON --output_dir ./Results/KGIntermediate --schema photo --graph_name g --address ws://localhost --port 8182 --output_file --output_file "C:/Users/user/Documents/GitHub/MERMaid/Results/Graphs/g.graphml"
+kgwizard transform ./Results/JSON --output_dir ./Results/KGIntermediate --schema photo --graph_name g --address ws://localhost --port 8182 --output_file "C:/Users/user/Documents/GitHub/MERMaid/Results/Graphs/g.graphml"
 # org普通有机反应，echem电化学反应，photo光化学反应
 
 kgwizard parse ./Results/KGIntermediate `

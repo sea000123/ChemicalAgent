@@ -85,11 +85,34 @@ def read_and_clean_file(path: Union[Path, str]) -> Union[list[dict[Any, Any]], N
         file not found or JSON is invalid.
     :rtype: list[dict[Any, Any]] | None
     """
+    encodings = ["utf-8", "utf-8-sig", "gbk", "cp936", "cp1252"]
+    content = None
+    for enc in encodings:
+        try:
+            with open(path, encoding=enc) as f:
+                content = f.read().strip()
+            break
+        except UnicodeDecodeError:
+            continue
+        except FileNotFoundError:
+            return None
+
+    if content is None:
+        try:
+            with open(path, encoding="utf-8", errors="replace") as f:
+                content = f.read().strip()
+        except Exception:
+            return None
+
     try:
-        with open(path) as f:
-            content = f.read().split('```json')[1].split('```')[0]
-            return json.loads(content.strip())
-    except (FileNotFoundError, json.JSONDecodeError, IndexError):
+        if "```json" in content:
+            content = content.split("```json", 1)[1].split("```", 1)[0].strip()
+        elif content.startswith("```"):
+            content = content.split("```", 1)[1].rsplit("```", 1)[0].strip()
+
+        return json.loads(content)
+
+    except (json.JSONDecodeError, IndexError):
         return None
 
 
@@ -608,7 +631,7 @@ def get_json_from_react(
 
     # Load target json
     json_react_path = Path(json_react_path)
-    with open(json_react_path, 'r') as f:
+    with open(json_react_path, 'r', encoding="utf-8") as f:
         react_dict = json.load(f)
 
     # Prepare RAG if needed
@@ -628,7 +651,7 @@ def get_json_from_react(
     save_path = results_path / Path(str(json_react_path.stem) +  '_1' + '.json')
     save_path.parent.mkdir(parents=True, exist_ok=True)
 
-    with open(save_path, 'w') as f:
+    with open(save_path, 'w', encoding="utf-8") as f:
         f.write(messages[-1]["content"])
 
     if rag_active:
@@ -644,7 +667,7 @@ def get_json_from_react(
         messages.append(build_prompt(ITERATOR_STR.format(number=n)))
         messages.append(get_response(messages))
         save_path = results_path / Path(str(json_react_path.stem) +  f'_{n}' + '.json')
-        with open(save_path, 'w') as f:
+        with open(save_path, 'w', encoding="utf-8") as f:
             f.write(messages[-1]["content"])
         print(f"iter: {n}")
         if rag_active:
@@ -782,7 +805,10 @@ def print_parse_summary(
     print(f"Total errors: {error_total}")
     print(f"  - Type errors: {type_e_total}/{error_total}")
     print(f"  - Key errors: {key_e_total}/{error_total}")
-    print(f"Performance: {conns_total/total:.2f}%")
+    if total == 0:
+        print("Performance: N/A - no parseable connections found.")
+    else:
+        print(f"Performance: {100 * conns_total / total:.2f}%")
     print("-Failing files-")
     if failing_files:
         deque(map(print, failing_files), maxlen=0)
