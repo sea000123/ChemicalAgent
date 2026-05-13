@@ -14,14 +14,14 @@ cd janusgraph-1.1.0
 
 # mermaid pipeline
 conda activate mermaid
-# paste api
+# paste api 
 $env:POPPLER_PATH="C:\Program Files\poppler-25.12.0\Library\bin"
 $env:Path="$env:POPPLER_PATH;$env:Path"
 $env:NO_PROXY="genaiapi.shanghaitech.edu.cn"
 $env:HF_ENDPOINT="https://hf-mirror.com"
 
 visualheist --config ./scripts/startup.json
-dataraider --config ./scripts/startup.json
+dataraider --config ./scripts/startup.json *> .\dataraider_debug.log
 
 # 清空图
 @'

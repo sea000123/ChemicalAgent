@@ -12,8 +12,8 @@
     "prompt_dir": "C:/Users/user/Documents/GitHub/MERMaid/Prompts",
     "model_size": "base",
 
-    "default_image_dir": "Results/extracted_images/",
-    "default_json_dir": "Results/jsons/",
+    "default_image_dir": "Results/Images",
+    "default_json_dir": "Results/JSON",
     "default_graph_dir": "Results/graphs/",
 
     "kgwizard": {
