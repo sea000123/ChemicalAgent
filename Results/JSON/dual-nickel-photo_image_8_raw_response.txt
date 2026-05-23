@@ -1,0 +1,70 @@
+{
+  "Optimization Runs Dictionary": {
+    "1": {
+      "NEW_KEY1": "OTHERS",
+      "NEW_KEY2": "N.R.",
+      "Entry": "0.1% PC (standard cond.)",
+      "Anode": "N.R.",
+      "Cathode": "N.R.",
+      "Electrolytes": "4-iodobenzotrifluoride (0.2 mmol), TMG (0.4 mmol), morpholine (0.4 mmol), Ni(dtbbpy)Br2 (0.01 mmol), 4DPAPN-tbu (0.2 umol), PC (0.1%)",
+      "Solvents": "DMF (8 mL)",
+      "Duration": "N.R.",
+      "Air/Inert": "N.R.",
+      "Yield": "N.R.",
+      "Footnote": ""
+    },
+    "2": {
+      "NEW_KEY1": "OTHERS",
+      "NEW_KEY2": "N.R.",
+      "Entry": "0.5% PC",
+      "Anode": "N.R.",
+      "Cathode": "N.R.",
+      "Electrolytes": "4-iodobenzotrifluoride (0.2 mmol), TMG (0.4 mmol), morpholine (0.4 mmol), Ni(dtbbpy)Br2 (0.01 mmol), 4DPAPN-tbu (0.2 umol), PC (0.5%)",
+      "Solvents": "DMF (8 mL)",
+      "Duration": "N.R.",
+      "Air/Inert": "N.R.",
+      "Yield": "N.R.",
+      "Footnote": ""
+    },
+    "3": {
+      "NEW_KEY1": "OTHERS",
+      "NEW_KEY2": "N.R.",
+      "Entry": "1% PC",
+      "Anode": "N.R.",
+      "Cathode": "N.R.",
+      "Electrolytes": "4-iodobenzotrifluoride (0.2 mmol), TMG (0.4 mmol), morpholine (0.4 mmol), Ni(dtbbpy)Br2 (0.01 mmol), 4DPAPN-tbu (0.2 umol), PC (1%)",
+      "Solvents": "DMF (8 mL)",
+      "Duration": "N.R.",
+      "Air/Inert": "N.R.",
+      "Yield": "N.R.",
+      "Footnote": ""
+    },
+    "4": {
+      "NEW_KEY1": "OTHERS",
+      "NEW_KEY2": "N.R.",
+      "Entry": "1% PC, less amine (1 eq)",
+      "Anode": "N.R.",
+      "Cathode": "N.R.",
+      "Electrolytes": "4-iodobenzotrifluoride (0.2 mmol), TMG (0.4 mmol), morpholine (0.2 mmol), Ni(dtbbpy)Br2 (0.01 mmol), 4DPAPN-tbu (0.2 umol), PC (1%)",
+      "Solvents": "DMF (8 mL)",
+      "Duration": "N.R.",
+      "Air/Inert": "N.R.",
+      "Yield": "N.R.",
+      "Footnote": ""
+    },
+    "5": {
+      "NEW_KEY1": "OTHERS",
+      "NEW_KEY2": "N.R.",
+      "Entry": "1% PC, no light 120–360 min",
+      "Anode": "N.R.",
+      "Cathode": "N.R.",
+      "Electrolytes": "4-iodobenzotrifluoride (0.2 mmol), TMG (0.4 mmol), morpholine (0.4 mmol), Ni(dtbbpy)Br2 (0.01 mmol), 4DPAPN-tbu (0.2 umol), PC (1%)",
+      "Solvents": "DMF (8 mL)",
+      "Duration": "120–360 min",
+      "Air/Inert": "N.R.",
+      "Yield": "N.R.",
+      "Footnote": ""
+    }
+  },
+  "Footnotes Dictionary": {}
+}

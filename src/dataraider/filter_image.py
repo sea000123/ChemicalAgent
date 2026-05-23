@@ -82,7 +82,7 @@ def filter_images(info:DataRaiderInfo,
             payload = {
                 "model": info.vlm_model,
                 "messages": messages,
-                "max_tokens": 4000
+                "max_completion_tokens": 4000
             }
             # Send API request
             try:
@@ -202,7 +202,7 @@ def check_segmentation(info:DataRaiderInfo,
             payload = {
                 "model": info.vlm_model,
                 "messages": messages,
-                "max_tokens": 4000
+                "max_completion_tokens": 4000
             }
             # Send API request
             try:

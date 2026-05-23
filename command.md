@@ -110,5 +110,11 @@ mermaid CFG   --out_location ./Results/JSON/out.json
 ```bash
 python -c "import os, requests, json; url='https://genaiapi.shanghaitech.edu.cn/api/v1/start'; headers={'Authorization':'Bearer '+os.environ.get('OPENAI_API_KEY',''), 'Content-Type':'application/json'}; payload={'model':'GPT-4.1-mini','messages':[{'role':'user','content':'你好'}]}; r=requests.post(url, headers=headers, json=payload, timeout=60); print(r.status_code); print(r.text[:2000])"
 ```
+- 脚本测试api，支持gpt和qwen：`python check_api_config.py`
 
 - `one_pdf.graphml`: 使用论文中作为例图的pdf进行绘制
+
+## logs
+### 0523
+- 把模型修改为`GPT-5.2`。前面gpt4.1的api应该是用完了。又尝试了qwen，但是由于qwen思考太长，没有到输出结果就直接被max_tokens截断了。因此修改了prompt希望阻止思考，但是效果不大。因为没找到关闭qwen-instruct思考的方式，所以放弃使用qwen。
+- 把项目里请求 API 时用到的 max_tokens 改成 max_completion_tokens, 这是gpt5.2和4.1不一样的地方。

@@ -75,7 +75,7 @@ def update_dict_with_footnotes(
         payload = {
             "model": info.vlm_model,
             "messages": messages,
-            "max_tokens": 4000
+            "max_completion_tokens": 4000
         }
 
         # Send API request
@@ -189,7 +189,7 @@ def adaptive_get_data(
     payload = {
         "model": info.vlm_model,
         "messages": messages,
-        "max_tokens": 4000
+        "max_completion_tokens": 4000
     }
     # Send API request
     try:

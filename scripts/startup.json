@@ -6,7 +6,7 @@
         "NEW_KEY2": "description of new_key2"
     },
     "pdf_dir": "C:/Users/user/Documents/GitHub/MERMaid/PDFs",
-    "image_dir": "C:/Users/user/Documents/GitHub/MERMaid/Results/Images/relevant_images",
+    "image_dir": "C:/Users/user/Documents/GitHub/MERMaid/Results/Images",
     "json_dir": "C:/Users/user/Documents/GitHub/MERMaid/Results/JSON", 
     "graph_dir": "C:/Users/user/Documents/GitHub/MERMaid/Results/Graphs",
     "prompt_dir": "C:/Users/user/Documents/GitHub/MERMaid/Prompts",
