@@ -104,6 +104,7 @@ kgwizard parse ./Results/KGIntermediate `
 
 
 ```
+- 合并的总命令（不推荐）
 mermaid RUN   --config ./scripts/startup.json
 mermaid CFG   --out_location ./Results/JSON/out.json
 
