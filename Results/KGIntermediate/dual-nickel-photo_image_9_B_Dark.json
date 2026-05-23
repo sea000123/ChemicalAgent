@@ -1,0 +1,144 @@
+[
+  {
+    "source": {
+      "label": "Study",
+      "properties": {
+        "name": "dual-nickel-photo_image_9"
+      }
+    },
+    "target": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_9_B_Dark"
+      }
+    },
+    "label": "HasReaction",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_9_B_Dark"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "42"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {
+      "value": 1.0,
+      "unit": "equiv"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_9_B_Dark"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "43"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {
+      "value": 3.0,
+      "unit": "equiv"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_9_B_Dark"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "TMGH+"
+      }
+    },
+    "label": "HasAdditive",
+    "properties": {
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_9_B_Dark"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "ACN"
+      }
+    },
+    "label": "HasSolvent",
+    "properties": {
+      "value": 0.05,
+      "unit": "M"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_9_B_Dark"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "unit": "h",
+        "value": 3.0
+      }
+    },
+    "label": "HasDuration",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_9_B_Dark"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "unit": "°C",
+        "value": 40.0
+      }
+    },
+    "label": "HasTemperature",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_9_B_Dark"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "Yield: 0%. Footnote b: Measured with GC-MS yields with mesitylene as internal standard calibrated with a genuine sample."
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  }
+]

@@ -1,0 +1,214 @@
+[
+  {
+    "source": {
+      "label": "Study",
+      "properties": {
+        "name": "dual-nickel-photo_image_4"
+      }
+    },
+    "target": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_4_8a"
+      }
+    },
+    "label": "HasReaction",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_4_8a"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "4-iodobenzotrifluoride"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {
+      "value": 0.4,
+      "unit": "mmol"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_4_8a"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "TMG"
+      }
+    },
+    "label": "HasAdditive",
+    "properties": {
+      "value": 0.8,
+      "unit": "mmol"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_4_8a"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "morpholine"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {
+      "value": 0.8,
+      "unit": "mmol"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_4_8a"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "NiBr2dtbbpy"
+      }
+    },
+    "label": "HasAdditive",
+    "properties": {
+      "value": 0.02,
+      "unit": "mmol"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_4_8a"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "4DPAIPN"
+      }
+    },
+    "label": "HasPhotocatalyst",
+    "properties": {
+      "value": 0.004,
+      "unit": "mmol"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_4_8a"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "DMF"
+      }
+    },
+    "label": "HasSolvent",
+    "properties": {
+      "value": 0.1,
+      "unit": "M"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_4_8a"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "unit": "h",
+        "value": 22.0
+      }
+    },
+    "label": "HasDuration",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_4_8a"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "unit": "°C",
+        "value": 43.0
+      }
+    },
+    "label": "HasTemperature",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_4_8a"
+      }
+    },
+    "target": {
+      "label": "Atmosphere",
+      "properties": {
+        "name": "CO2"
+      }
+    },
+    "label": "HasAtmosphere",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_4_8a"
+      }
+    },
+    "target": {
+      "label": "IrradiationConditions",
+      "properties": {
+        "text": "Light: 2 × 30W CFL"
+      }
+    },
+    "label": "HasConditions",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_4_8a"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "Yield: 72%; Selectivity: 72%. Yield measured by 19F{1H}-NMR with hexafluorobenzene as internal standard (excluded from chemicals list)."
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  }
+]

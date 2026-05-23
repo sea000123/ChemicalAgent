@@ -1,0 +1,143 @@
+[
+  {
+    "source": {
+      "label": "Study",
+      "properties": {
+        "name": "col2-202400146-photo_image_3"
+      }
+    },
+    "target": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "col2-202400146-photo_image_3_4"
+      }
+    },
+    "label": "HasReaction",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "col2-202400146-photo_image_3_4"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "1a"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {
+      "value": 1.0,
+      "unit": "equiv"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "col2-202400146-photo_image_3_4"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "4a"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {
+      "value": 3.0,
+      "unit": "equiv"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "col2-202400146-photo_image_3_4"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "Ir[(ppy)2(dtbbpy)]PF6"
+      }
+    },
+    "label": "HasPhotocatalyst",
+    "properties": {
+      "value": 1.0,
+      "unit": "mol%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "col2-202400146-photo_image_3_4"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "DMF"
+      }
+    },
+    "label": "HasSolvent",
+    "properties": {
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "col2-202400146-photo_image_3_4"
+      }
+    },
+    "target": {
+      "label": "IrradiationConditions",
+      "properties": {
+        "text": "455 nm LED"
+      }
+    },
+    "label": "HasConditions",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "col2-202400146-photo_image_3_4"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "unit": "°C",
+        "value": 25.0
+      }
+    },
+    "label": "HasTemperature",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "col2-202400146-photo_image_3_4"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "Outcome/Yield: traces (isolated yield not reported). Footnotes: a,b."
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  }
+]

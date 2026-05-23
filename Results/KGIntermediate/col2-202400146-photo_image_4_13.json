@@ -1,0 +1,141 @@
+[
+  {
+    "source": {
+      "label": "Study",
+      "properties": {
+        "name": "col2-202400146-photo_image_4"
+      }
+    },
+    "target": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "col2-202400146-photo_image_4_13"
+      }
+    },
+    "label": "HasReaction",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "col2-202400146-photo_image_4_13"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "DMF"
+      }
+    },
+    "label": "HasSolvent",
+    "properties": {
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "col2-202400146-photo_image_4_13"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "fac-Ir(ppy)3"
+      }
+    },
+    "label": "HasPhotocatalyst",
+    "properties": {
+      "value": 1.0,
+      "unit": "mol%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "col2-202400146-photo_image_4_13"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "unit": "h",
+        "value": 36.0
+      }
+    },
+    "label": "HasDuration",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "col2-202400146-photo_image_4_13"
+      }
+    },
+    "target": {
+      "label": "IrradiationConditions",
+      "properties": {
+        "text": "LED455"
+      }
+    },
+    "label": "HasConditions",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "col2-202400146-photo_image_4_13"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "6fa"
+      }
+    },
+    "label": "HasProduct",
+    "properties": {
+      "value": 56.0,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "col2-202400146-photo_image_4_13"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "Anode: N.R.; Cathode: N.R.; Air/Inert: N.R.; Solvent amount: N.R.; Standard conditions source: Reaction diagram; Footnote a: N.R."
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "col2-202400146-photo_image_4_13"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "unit": "°C",
+        "value": 25.0
+      }
+    },
+    "label": "HasTemperature",
+    "properties": {}
+  }
+]

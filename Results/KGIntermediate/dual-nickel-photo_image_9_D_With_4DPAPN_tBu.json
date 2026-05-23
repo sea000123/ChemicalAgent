@@ -1,0 +1,198 @@
+[
+  {
+    "source": {
+      "label": "Study",
+      "properties": {
+        "name": "dual-nickel-photo_image_9"
+      }
+    },
+    "target": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_9_D_With_4DPAPN_tBu"
+      }
+    },
+    "label": "HasReaction",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_9_D_With_4DPAPN_tBu"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "TMG"
+      }
+    },
+    "label": "HasAdditive",
+    "properties": {
+      "value": 2.0,
+      "unit": "equiv"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_9_D_With_4DPAPN_tBu"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "Ni(COD)2"
+      }
+    },
+    "label": "HasAdditive",
+    "properties": {
+      "value": 5.0,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_9_D_With_4DPAPN_tBu"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "dtbbpy"
+      }
+    },
+    "label": "HasAdditive",
+    "properties": {
+      "value": 5.0,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_9_D_With_4DPAPN_tBu"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "4DPAPN-tBu"
+      }
+    },
+    "label": "HasPhotocatalyst",
+    "properties": {
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_9_D_With_4DPAPN_tBu"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "CO2"
+      }
+    },
+    "label": "HasAdditive",
+    "properties": {
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_9_D_With_4DPAPN_tBu"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "DMF"
+      }
+    },
+    "label": "HasSolvent",
+    "properties": {
+      "value": 0.25,
+      "unit": "M"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_9_D_With_4DPAPN_tBu"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "unit": "h",
+        "value": 22.0
+      }
+    },
+    "label": "HasDuration",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_9_D_With_4DPAPN_tBu"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "unit": "°C",
+        "value": 43.0
+      }
+    },
+    "label": "HasTemperature",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_9_D_With_4DPAPN_tBu"
+      }
+    },
+    "target": {
+      "label": "IrradiationConditions",
+      "properties": {
+        "text": "2x30 W CFL"
+      }
+    },
+    "label": "HasConditions",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_9_D_With_4DPAPN_tBu"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "Yield: 27%. Footnote a: Measured with 19F{1H}-NMR, with hexafluorobenzene as internal standard."
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  }
+]

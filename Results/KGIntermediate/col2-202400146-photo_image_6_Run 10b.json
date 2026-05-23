@@ -1,0 +1,176 @@
+[
+  {
+    "source": {
+      "label": "Study",
+      "properties": {
+        "name": "col2-202400146-photo_image_6"
+      }
+    },
+    "target": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "col2-202400146-photo_image_6_10b"
+      }
+    },
+    "label": "HasReaction",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "col2-202400146-photo_image_6_10b"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "substrate 6ab (R=CH2OAc)"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "col2-202400146-photo_image_6_10b"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "naphthalene (from dihydronaphthalene 6ab)"
+      }
+    },
+    "label": "HasProduct",
+    "properties": {
+      "value": 71.0,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "col2-202400146-photo_image_6_10b"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "toluene"
+      }
+    },
+    "label": "HasSolvent",
+    "properties": {
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "col2-202400146-photo_image_6_10b"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "DDQ"
+      }
+    },
+    "label": "HasAdditive",
+    "properties": {
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "col2-202400146-photo_image_6_10b"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "unit": "h",
+        "value": 24.0
+      }
+    },
+    "label": "HasDuration",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "col2-202400146-photo_image_6_10b"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "unit": "°C",
+        "value": 25.0
+      }
+    },
+    "label": "HasTemperature",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "col2-202400146-photo_image_6_10b"
+      }
+    },
+    "target": {
+      "label": "Atmosphere",
+      "properties": {
+        "name": "N.R."
+      }
+    },
+    "label": "HasAtmosphere",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "col2-202400146-photo_image_6_10b"
+      }
+    },
+    "target": {
+      "label": "IrradiationConditions",
+      "properties": {
+        "text": "Standard conditions source: Reaction diagram"
+      }
+    },
+    "label": "HasConditions",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "col2-202400146-photo_image_6_10b"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "Conversion of dihydronaphthalenes to naphthalenes; substrate 6ab with R=CH2OAc. Anode: N.R.; Cathode: N.R."
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  }
+]

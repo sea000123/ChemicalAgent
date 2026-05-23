@@ -1,0 +1,211 @@
+[
+  {
+    "source": {
+      "label": "Study",
+      "properties": {
+        "name": "dual-nickel-photo_image_6"
+      }
+    },
+    "target": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_6_Entry 29"
+      }
+    },
+    "label": "HasReaction",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_6_Entry 29"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "DMF"
+      }
+    },
+    "label": "HasSolvent",
+    "properties": {
+      "value": 4.0,
+      "unit": "mL"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_6_Entry 29"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "tetramethylguanidine"
+      }
+    },
+    "label": "HasAdditive",
+    "properties": {
+      "value": 2.0,
+      "unit": "mmol"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_6_Entry 29"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "amine"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {
+      "value": 2.0,
+      "unit": "mmol"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_6_Entry 29"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "Ni(dtbbpy)Br2"
+      }
+    },
+    "label": "HasAdditive",
+    "properties": {
+      "value": 0.05,
+      "unit": "mmol"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_6_Entry 29"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "4DPAPN-tBu 7c"
+      }
+    },
+    "label": "HasPhotocatalyst",
+    "properties": {
+      "value": 1.0,
+      "unit": "umol"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_6_Entry 29"
+      }
+    },
+    "target": {
+      "label": "Atmosphere",
+      "properties": {
+        "name": "CO2"
+      }
+    },
+    "label": "HasAtmosphere",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_6_Entry 29"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "unit": "h",
+        "value": 66.0
+      }
+    },
+    "label": "HasDuration",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_6_Entry 29"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "unit": "C",
+        "value": 25.0
+      }
+    },
+    "label": "HasTemperature",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_6_Entry 29"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "Yield: 19%"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_6_Entry 29"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "Air/Inert: Flushed with CO2"
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_6_Entry 29"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "Footnote b: 66 h reaction time."
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  }
+]

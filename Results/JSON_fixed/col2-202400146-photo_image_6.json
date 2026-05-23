@@ -1,0 +1,98 @@
+{
+  "Optimization Runs Dictionary": {
+    "Run 10a": {
+      "NEW_KEY1": "OTHERS",
+      "NEW_KEY2": "Standard conditions source",
+      "Entry": "10a",
+      "Anode": "N.R.",
+      "Cathode": "N.R.",
+      "Electrolytes": "DDQ (N.R.)",
+      "Solvents": "toluene (N.R.)",
+      "Duration": "24 h",
+      "Air/Inert": "N.R.",
+      "Yield": "86%",
+      "Footnote": "",
+      "OTHERS": "Conversion of dihydronaphthalenes to naphthalenes; substrate 6aa with R=(CH2)3Br",
+      "Standard conditions source": "Reaction diagram"
+    },
+    "Run 10b": {
+      "NEW_KEY1": "OTHERS",
+      "NEW_KEY2": "Standard conditions source",
+      "Entry": "10b",
+      "Anode": "N.R.",
+      "Cathode": "N.R.",
+      "Electrolytes": "DDQ (N.R.)",
+      "Solvents": "toluene (N.R.)",
+      "Duration": "24 h",
+      "Air/Inert": "N.R.",
+      "Yield": "71%",
+      "Footnote": "",
+      "OTHERS": "Conversion of dihydronaphthalenes to naphthalenes; substrate 6ab with R=CH2OAc",
+      "Standard conditions source": "Reaction diagram"
+    },
+    "Run 10d": {
+      "NEW_KEY1": "OTHERS",
+      "NEW_KEY2": "Standard conditions source",
+      "Entry": "10d",
+      "Anode": "N.R.",
+      "Cathode": "N.R.",
+      "Electrolytes": "DDQ (N.R.)",
+      "Solvents": "toluene (N.R.)",
+      "Duration": "24 h",
+      "Air/Inert": "N.R.",
+      "Yield": "78%",
+      "Footnote": "",
+      "OTHERS": "Conversion of dihydronaphthalenes to naphthalenes; substrate 6ad with R=CH2Ph",
+      "Standard conditions source": "Reaction diagram"
+    }
+  },
+  "Footnotes Dictionary": {},
+  "Optimization Runs": {
+    "Run 10a": {
+      "NEW_KEY1": "OTHERS",
+      "NEW_KEY2": "Standard conditions source",
+      "Entry": "10a",
+      "Anode": "N.R.",
+      "Cathode": "N.R.",
+      "Electrolytes": "DDQ (N.R.)",
+      "Solvents": "toluene (N.R.)",
+      "Duration": "24 h",
+      "Air/Inert": "N.R.",
+      "Yield": "86%",
+      "Footnote": "",
+      "OTHERS": "Conversion of dihydronaphthalenes to naphthalenes; substrate 6aa with R=(CH2)3Br",
+      "Standard conditions source": "Reaction diagram"
+    },
+    "Run 10b": {
+      "NEW_KEY1": "OTHERS",
+      "NEW_KEY2": "Standard conditions source",
+      "Entry": "10b",
+      "Anode": "N.R.",
+      "Cathode": "N.R.",
+      "Electrolytes": "DDQ (N.R.)",
+      "Solvents": "toluene (N.R.)",
+      "Duration": "24 h",
+      "Air/Inert": "N.R.",
+      "Yield": "71%",
+      "Footnote": "",
+      "OTHERS": "Conversion of dihydronaphthalenes to naphthalenes; substrate 6ab with R=CH2OAc",
+      "Standard conditions source": "Reaction diagram"
+    },
+    "Run 10d": {
+      "NEW_KEY1": "OTHERS",
+      "NEW_KEY2": "Standard conditions source",
+      "Entry": "10d",
+      "Anode": "N.R.",
+      "Cathode": "N.R.",
+      "Electrolytes": "DDQ (N.R.)",
+      "Solvents": "toluene (N.R.)",
+      "Duration": "24 h",
+      "Air/Inert": "N.R.",
+      "Yield": "78%",
+      "Footnote": "",
+      "OTHERS": "Conversion of dihydronaphthalenes to naphthalenes; substrate 6ad with R=CH2Ph",
+      "Standard conditions source": "Reaction diagram"
+    }
+  },
+  "Footnotes": {}
+}

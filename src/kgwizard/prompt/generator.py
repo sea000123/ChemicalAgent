@@ -92,7 +92,7 @@ def build_prompt_from_react_file(
     :return: A structured prompt dictionary.
     :rtype: dict[str, str]
     """
-    with open(path, 'r') as f:
+    with open(path, 'r', encoding='utf-8') as f:
         return build_prompt_from_react(
             f.read()
             , header_path=header_path

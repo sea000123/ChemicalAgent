@@ -1,0 +1,217 @@
+[
+  {
+    "source": {
+      "label": "Study",
+      "properties": {
+        "name": "dual-nickel-photo_image_8"
+      }
+    },
+    "target": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_8_5"
+      }
+    },
+    "label": "HasReaction",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_8_5"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "4-iodobenzotrifluoride"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {
+      "value": 0.2,
+      "unit": "mmol"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_8_5"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "TMG"
+      }
+    },
+    "label": "HasAdditive",
+    "properties": {
+      "value": 0.4,
+      "unit": "mmol"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_8_5"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "morpholine"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {
+      "value": 0.4,
+      "unit": "mmol"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_8_5"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "Ni(dtbbpy)Br2"
+      }
+    },
+    "label": "HasAdditive",
+    "properties": {
+      "value": 0.01,
+      "unit": "mmol"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_8_5"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "4DPAPN-tbu"
+      }
+    },
+    "label": "HasPhotocatalyst",
+    "properties": {
+      "value": 0.2,
+      "unit": "umol"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_8_5"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "PC"
+      }
+    },
+    "label": "HasAdditive",
+    "properties": {
+      "value": 1.0,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_8_5"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "DMF"
+      }
+    },
+    "label": "HasSolvent",
+    "properties": {
+      "value": 8.0,
+      "unit": "mL"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_8_5"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "unit": "min",
+        "value": 240.0
+      }
+    },
+    "label": "HasDuration",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_8_5"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "unit": "C",
+        "value": 25.0
+      }
+    },
+    "label": "HasTemperature",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_8_5"
+      }
+    },
+    "target": {
+      "label": "IrradiationConditions",
+      "properties": {
+        "text": "no light"
+      }
+    },
+    "label": "HasConditions",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_8_5"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "Entry: 1% PC, no light 120–360 min; Anode: N.R.; Cathode: N.R.; Air/Inert: N.R.; Yield: N.R. Duration reported as a range (120–360 min); stored as 240 min (midpoint)."
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  }
+]

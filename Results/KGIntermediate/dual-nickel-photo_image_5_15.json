@@ -1,0 +1,309 @@
+[
+  {
+    "source": {
+      "label": "Study",
+      "properties": {
+        "name": "dual-nickel-photo_image_5"
+      }
+    },
+    "target": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_5_15"
+      }
+    },
+    "label": "HasReaction",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_5_15"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "TMG"
+      }
+    },
+    "label": "HasAdditive",
+    "properties": {
+      "value": 2.0,
+      "unit": "mmol"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_5_15"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "amine"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {
+      "value": 2.0,
+      "unit": "mmol"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_5_15"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "Ni(dtbbpy)Br2"
+      }
+    },
+    "label": "HasAdditive",
+    "properties": {
+      "value": 0.05,
+      "unit": "mmol"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_5_15"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "4DPAPN-tBu 7c"
+      }
+    },
+    "label": "HasPhotocatalyst",
+    "properties": {
+      "value": 1.0,
+      "unit": "umol"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_5_15"
+      }
+    },
+    "target": {
+      "label": "Atmosphere",
+      "properties": {
+        "name": "CO2"
+      }
+    },
+    "label": "HasAtmosphere",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_5_15"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "DMF"
+      }
+    },
+    "label": "HasSolvent",
+    "properties": {
+      "value": 4.0,
+      "unit": "mL"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_5_15"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "unit": "h",
+        "value": 22.0
+      }
+    },
+    "label": "HasDuration",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_5_15"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "unit": "C",
+        "value": 43.0
+      }
+    },
+    "label": "HasTemperature",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_5_15"
+      }
+    },
+    "target": {
+      "label": "IrradiationConditions",
+      "properties": {
+        "text": "2 × 30 W CFL (or blue LEDs, 427 nm)"
+      }
+    },
+    "label": "HasConditions",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_5_15"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "4-iodobenzotrifluoride"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {
+      "value": 1.0,
+      "unit": "mmol"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_5_15"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "4-bromobenzotrifluoride"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {
+      "value": 1.0,
+      "unit": "mmol"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_5_15"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "I product"
+      }
+    },
+    "label": "HasProduct",
+    "properties": {
+      "value": 72.0,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_5_15"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "I product (427 nm)"
+      }
+    },
+    "label": "HasProduct",
+    "properties": {
+      "value": 68.0,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_5_15"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "Br product"
+      }
+    },
+    "label": "HasProduct",
+    "properties": {
+      "value": 3.0,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_5_15"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "Br product (427 nm)"
+      }
+    },
+    "label": "HasProduct",
+    "properties": {
+      "value": 41.0,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_5_15"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "Solvent concentration: 0.25 M. CO2 (flushed). Isolated yield for iodides; NMR-yield in parentheses; NMR-yield for bromides. Blue LEDs (427 nm) instead of CFL in brackets."
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  }
+]

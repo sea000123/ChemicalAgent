@@ -1,0 +1,214 @@
+[
+  {
+    "source": {
+      "label": "Study",
+      "properties": {
+        "name": "dual-nickel-photo_image_7"
+      }
+    },
+    "target": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_7_A_Recovery_of_34_Ar_instead_of_CO2"
+      }
+    },
+    "label": "HasReaction",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_7_A_Recovery_of_34_Ar_instead_of_CO2"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "Ar"
+      }
+    },
+    "label": "HasAdditive",
+    "properties": {
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_7_A_Recovery_of_34_Ar_instead_of_CO2"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "TMG"
+      }
+    },
+    "label": "HasAdditive",
+    "properties": {
+      "value": 1.0,
+      "unit": "equiv"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_7_A_Recovery_of_34_Ar_instead_of_CO2"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "Ni(dtbbpy)Br2"
+      }
+    },
+    "label": "HasAdditive",
+    "properties": {
+      "value": 5.0,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_7_A_Recovery_of_34_Ar_instead_of_CO2"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "4DPAPN-tBu (7c)"
+      }
+    },
+    "label": "HasPhotocatalyst",
+    "properties": {
+      "value": 0.1,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_7_A_Recovery_of_34_Ar_instead_of_CO2"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "DMF"
+      }
+    },
+    "label": "HasSolvent",
+    "properties": {
+      "value": 0.05,
+      "unit": "M"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_7_A_Recovery_of_34_Ar_instead_of_CO2"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "unit": "h",
+        "value": 72.0
+      }
+    },
+    "label": "HasDuration",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_7_A_Recovery_of_34_Ar_instead_of_CO2"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "unit": "°C",
+        "value": 43.0
+      }
+    },
+    "label": "HasTemperature",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_7_A_Recovery_of_34_Ar_instead_of_CO2"
+      }
+    },
+    "target": {
+      "label": "IrradiationConditions",
+      "properties": {
+        "text": "Light: 2x 30 W CFL"
+      }
+    },
+    "label": "HasConditions",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_7_A_Recovery_of_34_Ar_instead_of_CO2"
+      }
+    },
+    "target": {
+      "label": "Atmosphere",
+      "properties": {
+        "name": "Ar"
+      }
+    },
+    "label": "HasAtmosphere",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_7_A_Recovery_of_34_Ar_instead_of_CO2"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "34"
+      }
+    },
+    "label": "HasProduct",
+    "properties": {
+      "value": 84.0,
+      "unit": "%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "dual-nickel-photo_image_7_A_Recovery_of_34_Ar_instead_of_CO2"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "Modification vs standard: Ar instead of CO2. Yield reported as: Recovery of 34 (84%). Footnote b: 13% N-arylated product. Standard_Conditions_Source: Reaction diagram (A) decomposition of carbamate."
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  }
+]

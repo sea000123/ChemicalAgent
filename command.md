@@ -51,9 +51,12 @@ finally:
     conn.close()
 '@ | python -
 
-
 kgwizard transform ./Results/JSON --output_dir ./Results/KGIntermediate --schema photo --graph_name g --address ws://localhost --port 8182 --output_file "C:/Users/user/Documents/GitHub/MERMaid/Results/Graphs/g.graphml"
 # org普通有机反应，echem电化学反应，photo光化学反应
+
+# gpt5.2：可能需要修复JSON格式
+python .\fix_kgwizard_json.py .\Results\JSON --output_dir .\Results\JSON_fixed
+kgwizard transform .\Results\JSON_fixed --output_dir .\Results\KGIntermediate --schema photo --graph_name g --address ws://localhost --port 8182 --output_file "C:/Users/user/Documents/GitHub/MERMaid/Results/Graphs/g.graphml"
 
 kgwizard parse ./Results/KGIntermediate `
   --schema photo `
@@ -118,3 +121,8 @@ python -c "import os, requests, json; url='https://genaiapi.shanghaitech.edu.cn/
 ### 0523
 - 把模型修改为`GPT-5.2`。前面gpt4.1的api应该是用完了。又尝试了qwen，但是由于qwen思考太长，没有到输出结果就直接被max_tokens截断了。因此修改了prompt希望阻止思考，但是效果不大。因为没找到关闭qwen-instruct思考的方式，所以放弃使用qwen。
 - 把项目里请求 API 时用到的 max_tokens 改成 max_completion_tokens, 这是gpt5.2和4.1不一样的地方。
+- gpt5.2：可能需要修复JSON格式，生成了一个JSON_fixed文件夹。
+```
+python .\fix_kgwizard_json.py .\Results\JSON --output_dir .\Results\JSON_fixed
+kgwizard transform .\Results\JSON_fixed --output_dir .\Results\KGIntermediate --schema photo --graph_name g --address ws://localhost --port 8182 --output_file "C:/Users/user/Documents/GitHub/MERMaid/Results/Graphs/g.graphml"
+```

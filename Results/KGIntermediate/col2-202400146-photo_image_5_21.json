@@ -1,0 +1,176 @@
+[
+  {
+    "source": {
+      "label": "Study",
+      "properties": {
+        "name": "col2-202400146-photo_image_5"
+      }
+    },
+    "target": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "col2-202400146-photo_image_5_21"
+      }
+    },
+    "label": "HasReaction",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "col2-202400146-photo_image_5_21"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "Substrate 1"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {
+      "value": 0.5,
+      "unit": "mmol"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "col2-202400146-photo_image_5_21"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "Olefin 4"
+      }
+    },
+    "label": "HasReactant",
+    "properties": {
+      "value": 3.0,
+      "unit": "equiv"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "col2-202400146-photo_image_5_21"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "DMF"
+      }
+    },
+    "label": "HasSolvent",
+    "properties": {
+      "value": 2.0,
+      "unit": "mL"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "col2-202400146-photo_image_5_21"
+      }
+    },
+    "target": {
+      "label": "Compound",
+      "properties": {
+        "name": "photocatalyst"
+      }
+    },
+    "label": "HasPhotocatalyst",
+    "properties": {
+      "value": 1.0,
+      "unit": "mol%"
+    }
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "col2-202400146-photo_image_5_21"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "unit": "h",
+        "value": 36.0
+      }
+    },
+    "label": "HasDuration",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "col2-202400146-photo_image_5_21"
+      }
+    },
+    "target": {
+      "label": "Quantity",
+      "properties": {
+        "unit": "°C",
+        "value": 25.0
+      }
+    },
+    "label": "HasTemperature",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "col2-202400146-photo_image_5_21"
+      }
+    },
+    "target": {
+      "label": "IrradiationConditions",
+      "properties": {
+        "text": "LED light source (455 nm)"
+      }
+    },
+    "label": "HasConditions",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "col2-202400146-photo_image_5_21"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "Footnote a: Reaction conditions: 1 (0.5 mmol), 4 (3 equiv), and photocatalyst (1 mol%) in dry DMF (2.0 mL) was irradiated for 36 h with an LED light source (455 nm)."
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  },
+  {
+    "source": {
+      "label": "Reaction",
+      "properties": {
+        "uuid": "col2-202400146-photo_image_5_21"
+      }
+    },
+    "target": {
+      "label": "Comment",
+      "properties": {
+        "text": "Yield: N.R."
+      }
+    },
+    "label": "HasComment",
+    "properties": {}
+  }
+]
