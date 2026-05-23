@@ -20,6 +20,12 @@ Assume changes SUBSTITUTE the standard condition unless otherwise specified that
 MAKE SURE ALL CHEMICALS are included. 
 If any COLUMN INFORMATION is not included in previous fields, you MUST add to 'OTHERS'. 
 
+IMPORTANT:
+Return ONLY a valid JSON object.
+Do not include reasoning.
+Do not include explanations.
+Do not include markdown fences.
+The first character of your response must be { and the last character must be }.
 
 
 

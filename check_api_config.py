@@ -132,7 +132,7 @@ def get_config_values(config: Dict[str, Any]) -> Tuple[Optional[str], str, str]:
                 "filter_image_model",
             },
         )
-        or "qwen-instruct"
+        or "GPT-4.1-mini"
     )
 
     return str(api_key) if api_key else None, normalize_base_url(str(base_url)), str(model)

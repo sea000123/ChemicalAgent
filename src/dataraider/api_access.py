@@ -85,7 +85,7 @@ def update_dict_with_footnotes(
                 "OPENAI_BASE_URL",
                 "https://genaiapi.shanghaitech.edu.cn/api/v1/start"
             )
-            response = requests.post(url, headers=headers, json=payload,timeout=60)
+            response = requests.post(url, headers=headers, json=payload,timeout=180)
 
             response.raise_for_status()  # Raise error if the request failed
             data=response.json()
@@ -143,7 +143,7 @@ def adaptive_get_data(
     image_paths = sorted((image_directory / "cropped_images").glob(f"{image_name}_*.png"))
     if not image_paths:
         print(f"No subimages found for {image_name}")
-        return
+        return False
     
     def encode_image(image_path):
         with open(image_path, "rb") as image_file:
@@ -198,16 +198,38 @@ def adaptive_get_data(
             "OPENAI_BASE_URL",
             "https://genaiapi.shanghaitech.edu.cn/api/v1/start"
         )
-        response = requests.post(url, headers=headers, json=payload,timeout=60)
+        response = requests.post(url, headers=headers, json=payload,timeout=180)
+        print("STATUS:", response.status_code)
+        print("TEXT:", response.text[:4000])
 
-        response.raise_for_status()  # Raise error if the request failed
-        data=response.json()
+        response.raise_for_status()
+        data = response.json()
+
+        if "choices" not in data:
+            raise RuntimeError(f"No choices in response: {data}")
+            return False
+
+        if not data["choices"]:
+            raise RuntimeError(f"Empty choices in response: {data}")
+            return False
+
+        message = data["choices"][0].get("message", {})
+        if "content" not in message:
+            raise RuntimeError(f"No message.content in response: {data}")
+            return False
+
+        reaction_data = message["content"]
+
         if "error" in data:
             raise RuntimeError(data["error"].get("message", str(data["error"])))
+            return False
         reaction_data = response.json()['choices'][0]['message']['content']
 
         # Save responses
-        with open(response_path, 'w') as json_file:
+        raw_response_path = json_directory / f"{image_name}_raw_response.txt"
+        with open(raw_response_path, "w", encoding="utf-8") as f:
+            f.write(str(reaction_data))
+        with open(response_path, 'w', encoding="utf-8") as json_file:
             json.dump(reaction_data, json_file)
         print("Reaction dictionary saved")
 
@@ -215,9 +237,11 @@ def adaptive_get_data(
         try: 
             reformat_json(response_path)
             print("Reaction data cleaned.")
-
+            return True
         except Exception as e: 
             print(f"Reaction data not cleaned. Error: {e}")
+            return False
     
     except requests.exceptions.RequestException as e:
         print(f"Error during API request: {e}")
+        return False

@@ -5,6 +5,7 @@ from .api_access import adaptive_get_data, update_dict_with_footnotes
 from .reaction_dictionary_formating import update_dict_with_smiles, postprocess_dict
 import shutil
 from pathlib import Path
+import traceback
 
 """
 Contains high level functions that process images
@@ -43,10 +44,15 @@ def process_indiv_images(
     print(f'Extracting reaction information from {image_name}.')
     print('Cropping image...')
     crop_image(image_name, image_directory, min_segment_height)
-    print('Images cropped. Passing subimages through DataRaider...')          
-    adaptive_get_data(info, prompt_directory, get_data_prompt, image_name, image_directory, json_directory)
+    print('Images cropped. Passing subimages through DataRaider...')   
+           
+    ok = adaptive_get_data(info, prompt_directory, get_data_prompt, image_name, image_directory, json_directory)
+    if not ok:
+        print(f"Skipping {image_name}: no JSON generated.")
+        return
     print('Updating with footnote information...')
     update_dict_with_footnotes(info, prompt_directory, update_dict_prompt, image_name, json_directory)
+
     print('Postprocessing reaction dictionary...')
     postprocess_dict(image_name, json_directory)
     print('Extracting reaction SMILES...')
@@ -86,10 +92,22 @@ def batch_process_images(
     for file in image_directory.iterdir():
         if file.is_file() and file.suffix.lower() in image_extensions:
             image_name = file.stem
-            try: 
-                process_indiv_images(info, image_name, image_directory, prompt_directory, get_data_prompt, update_dict_prompt, json_directory)
-            except: 
+            
+            try:
+                process_indiv_images(
+                    info,
+                    image_name,
+                    image_directory,
+                    prompt_directory,
+                    get_data_prompt,
+                    update_dict_prompt,
+                    json_directory
+                )
+            except Exception as e:
+                print(f"[ERROR] Failed processing {image_name}: {e}")
+                traceback.print_exc()
                 continue
+
     print()
     print("DataRaider -- Mission Accomplished. All images processed!")
 

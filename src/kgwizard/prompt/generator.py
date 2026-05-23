@@ -119,7 +119,7 @@ def get_response(
     # )
     chat_completion = client.chat.completions.create(
         messages=messages,
-        model=os.environ.get("OPENAI_MODEL", "qwen-instruct")
+        model=os.environ.get("OPENAI_MODEL", "GPT-4.1-mini")
     )
 
     return {
