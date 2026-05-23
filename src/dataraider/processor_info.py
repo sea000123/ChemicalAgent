@@ -21,7 +21,7 @@ class DataRaiderInfo():
     
     def __init__(self,  
                  api_key:str,
-                 vlm_model = "GPT-4.1-mini",
+                 vlm_model = "GPT-5.2",
                  device='cpu', 
                  ckpt_path:str=None,
                  base_url: str = None):
