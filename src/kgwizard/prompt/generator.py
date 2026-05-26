@@ -102,27 +102,71 @@ def build_prompt_from_react_file(
         )
 
 
+def _extract_assistant_text(chat_completion) -> str:
+    """
+    Extract assistant output from standard OpenAI content field,
+    or from non-standard fields used by the ShanghaiTech gateway.
+    """
+    msg = chat_completion.choices[0].message
+
+    # Standard OpenAI-compatible field
+    content = getattr(msg, "content", None)
+    if isinstance(content, str) and content.strip():
+        return content.strip()
+
+    # ShanghaiTech gateway seems to put output here
+    reasoning = getattr(msg, "reasoning", None)
+    if isinstance(reasoning, str) and reasoning.strip():
+        return reasoning.strip()
+
+    # Some OpenAI SDK versions store unknown fields in model_extra
+    model_extra = getattr(msg, "model_extra", None) or {}
+    for key in ("reasoning", "reasoning_content"):
+        value = model_extra.get(key)
+        if isinstance(value, str) and value.strip():
+            return value.strip()
+
+    # Last fallback: inspect dumped dict
+    try:
+        dumped = msg.model_dump()
+        for key in ("content", "reasoning", "reasoning_content"):
+            value = dumped.get(key)
+            if isinstance(value, str) and value.strip():
+                return value.strip()
+    except Exception:
+        pass
+
+    return ""
+
+
 def get_response(
     messages: list[dict[str, Any]]
 ) -> dict[str, str]:
     """
-    Send a list of messages to the OpenAI API and retrieve the assistant's response.
-
-    :param messages: A list of message strings in conversation format.
-    :type messages: list[str]
-    :return: A dictionary containing the role (`"assistant"`) and response content.
-    :rtype: dict[str, str]
+    Send a list of messages to the OpenAI-compatible API and retrieve the assistant's response.
     """
-    # chat_completion = client.chat.completions.create(
-    #     messages=messages
-    #     , model="gpt-4o"
-    # )
     chat_completion = client.chat.completions.create(
         messages=messages,
-        model=os.environ.get("OPENAI_MODEL", "GPT-5.2")
+        model=os.environ.get("OPENAI_MODEL", "qwen-instruct"),
+        temperature=0,
+        max_tokens=int(os.environ.get("OPENAI_MAX_TOKENS", "4096")),
+        extra_body={
+            "chat_template_kwargs": {
+                "enable_thinking": False
+            }
+        },
     )
 
+    content = _extract_assistant_text(chat_completion)
+
+    if not content:
+        raise RuntimeError(
+            "Empty assistant response. Full response: "
+            + str(chat_completion.model_dump())
+        )
+
     return {
-        "role": "assistant"
-        , "content": chat_completion.choices[0].message.content.strip()
+        "role": "assistant",
+        "content": content,
     }
+
